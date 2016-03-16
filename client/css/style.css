@@ -1,9 +1,23 @@
 body{
   font-family: "HelveticaNeue-light",Helvetica,Arial,sans-serif;
+  color: black;
 }
 
 #logo-spark{
-  font-family: "Helvetica Neue-Bold",Helvetica,Arial,sans-serif
+  font-family: "Helvetica Neue-bold",Helvetica,Arial,sans-serif;
   font-size: 25px;
   color: black;
+}
+
+#logo-tc{
+  font-family: "Helvetica Neue-light",Helvetica,Arial,sans-serif;
+  font-size: 25px;
+  color: #f05524;
+}
+
+.logo-curlys{
+  font-size: 25px;
+  color: black;
+  font-family: "Helvetica Neue-light",Helvetica,Arial,sans-serif;
+
 }
