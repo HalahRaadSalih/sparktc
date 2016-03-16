@@ -3,9 +3,20 @@ body{
   color: black;
   background: #f7f7f7;
 }
+
 .container{
   background: white;
+
 }
+
+.header{
+  height: 100px;
+  margin: 0 auto;
+  max-width: 1024px;
+  padding: 20px 15px;
+
+}
+
 #logo-spark{
   font-family: "Helvetica Neue-bold",Helvetica,Arial,sans-serif;
   font-size: 25px;
@@ -25,6 +36,7 @@ body{
   font-weight: 100;
 
 }
+
 .menu-item > a{
   font-family: "Helvetica Neue-bold",Helvetica,Arial,sans-serif;
   color: black;
@@ -36,6 +48,7 @@ body{
   border-bottom: 2px solid black;
 }
 
+
 .dropdown > a{
   font-family: "Helvetica Neue-bold",Helvetica,Arial,sans-serif;
   color: black;
@@ -45,6 +58,7 @@ body{
 .resources{
   right:auto;
 }
+
 .resources > li{
   padding-left: 10px;
 }
