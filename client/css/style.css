@@ -16,6 +16,10 @@ body{
   padding: 20px 15px;
 
 }
+.navbar-default{
+  border: 0px !important;
+  border-color: white !important;
+}
 
 #logo-spark{
   font-family: "Helvetica Neue-bold",Helvetica,Arial,sans-serif;
@@ -39,19 +43,20 @@ body{
 
 .menu-item > a{
   font-family: "Helvetica Neue-bold",Helvetica,Arial,sans-serif;
-  color: black;
+  color: black !important;
   font-weight: bold;
 
 }
 
-.menu-item>a:hover {
+.menu-item>a:hover,
+.dropdown > a:hover {
   border-bottom: 2px solid black;
 }
 
 
 .dropdown > a{
   font-family: "Helvetica Neue-bold",Helvetica,Arial,sans-serif;
-  color: black;
+  color: black !important;
   font-weight: bold;
 }
 
