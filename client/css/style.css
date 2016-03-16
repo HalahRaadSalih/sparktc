@@ -1,8 +1,11 @@
 body{
   font-family: "HelveticaNeue-light",Helvetica,Arial,sans-serif;
   color: black;
+  background: #f7f7f7;
 }
-
+.container{
+  background: white;
+}
 #logo-spark{
   font-family: "Helvetica Neue-bold",Helvetica,Arial,sans-serif;
   font-size: 25px;
