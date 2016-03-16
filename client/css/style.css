@@ -29,6 +29,19 @@ body{
 
 }
 
-.menu-item:hover {
+.menu-item>a:hover {
   border-bottom: 2px solid black;
+}
+
+.dropdown > a{
+  font-family: "Helvetica Neue-bold",Helvetica,Arial,sans-serif;
+  color: black;
+  font-weight: bold;
+}
+
+.resources{
+  right:auto;
+}
+.resources > li{
+  padding-left: 10px;
 }
