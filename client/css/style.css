@@ -25,7 +25,7 @@ body{
   border-color: white !important;
 }
 
-#logo-spark{
+#logo-spark, .about{
   font-family: "Helvetica Neue-bold",Helvetica,Arial,sans-serif;
   font-size: 25px;
   color: black;
@@ -73,17 +73,9 @@ body{
 }
 
 .carousel{
-  /*padding-top: 100px;*/
   margin-top: 0px;
-  background: green;
-}
-#slides_control{
-  background: red;
 }
 
-/*img{
-  margin:auto;
-}*/
 div.car.ng-isolate-scrope{
   margin-top: 0px !important;
 }
