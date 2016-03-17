@@ -44,12 +44,17 @@ body{
   font-weight: 100;
 
 }
+.menu-item {
+  padding: 0px 15px;
+}
 
-.menu-item > a{
+.menu-item > a,
+.dropdown > a{
   font-family: "Helvetica Neue-bold",Helvetica,Arial,sans-serif;
   color: black !important;
   font-weight: bold;
-
+  padding-left: 0px !important;
+  padding-right: 0px !important;
 }
 
 .menu-item>a:hover,
@@ -65,6 +70,8 @@ body{
   font-family: "Helvetica Neue-bold",Helvetica,Arial,sans-serif;
   color: black !important;
   font-weight: bold;
+
+
 }
 
 .resources{
