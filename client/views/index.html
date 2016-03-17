@@ -85,12 +85,17 @@
     </div>
   </div>
 
-  <div class="container" id="about">
+  <div class="container" id="about" ng-controller="AboutController">
     <div class="row">
       <div class="col-md-12">
-        <h3 class="">About</h3>
-        <p>
-        </p>
+        <div class="">
+          <h3 class="">About</h3>
+          <p>
+            {{content.about}}
+
+          </p>
+        </div>
+
       </div>
     </div>
   </div>
