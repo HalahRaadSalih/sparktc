@@ -25,7 +25,7 @@
    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.5.9/slick-theme.css"/>
 
   </head>
-  <body ng-controller="ScrollCtrl">
+  <body ng-controller="NavBarController">
     <!-- navbar -->
     <div class="">
 
@@ -46,11 +46,7 @@
               <li class="dropdown">
                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Resources <span class="caret"></span></a>
                <ul class="dropdown-menu resources">
-                 <li>Code</li>
-                 <li>Contrubitions</li>
-                 <li>University</li>
-                 <li>Apache SystemML</li>
-                 <li>Apache Spark</li>
+                 <li ng-repeat="resource in resources">{{resource.name}}</li>
                </ul>
              </li>
             </ul>

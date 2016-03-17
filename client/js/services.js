@@ -16,6 +16,32 @@ app.factory('carsoulSlides', function(){
   ];
 });
 
+app.factory('resources', function(){
+  return [
+    {
+      name:"Code",
+      link:""
+    },
+    {
+      name: "Contrubitions",
+      link:""
+    },
+    {
+      name: "University",
+      link:""
+    },
+    {
+      name: "Apache SystemML",
+      link:""
+    },
+    {
+      name: "Apache Spark",
+      link:""
+    }
+
+  ];
+});
+
 app.service('anchorSmoothScroll', function(){
 
     this.scrollTo = function(eID) {
