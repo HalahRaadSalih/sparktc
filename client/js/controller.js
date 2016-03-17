@@ -11,7 +11,16 @@ app.controller('CarouselDemoCtrl',function($scope, carsoulSlides){
 
 app.controller('NavBarController', function($scope, $location, anchorSmoothScroll, resources) {
   $scope.resources = resources;
+  $scope.hidden = true;
 
+  $scope.showDropDownMenu = function(){
+     $scope.hidden = false;
+  }
+
+  $scope.hideDropDownMenu = function(){
+     $scope.hidden = true;
+  }
+  
   $scope.gotoElement = function (eID){
     // set the location.hash to the id of
     // the element you wish to scroll to.
@@ -25,5 +34,5 @@ app.controller('NavBarController', function($scope, $location, anchorSmoothScrol
 
 app.controller('AboutController', function($scope, aboutContent){
   $scope.content = {};
-  $scope.content.about = aboutContent; 
+  $scope.content.about = aboutContent;
 });

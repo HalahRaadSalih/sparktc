@@ -52,16 +52,22 @@
             </ul>
           </div>
           <ul class="nav navbar-nav navbar-right">
-              <li class="menu-item"><a href="/#/">Community</a></li>
-              <li class="menu-item"><a href="/#/">Projects</a></li>
-              <li class="menu-item"><a href="/#/">Blog</a></li>
-              <li class="menu-item"><a ng-click="gotoElement('about')">About</a></li>
+              <li class="menu-item"><a ng-mouseover="showDropDownMenu()" ng-mouseleave="hideDropDownMenu()" href="/#/">Community</a></li>
+              <li class="menu-item"><a ng-mouseover="showDropDownMenu()" ng-mouseleave="hideDropDownMenu()" href="/#/">Projects</a></li>
+              <li class="menu-item"><a ng-mouseover="showDropDownMenu()" ng-mouseleave="hideDropDownMenu()" href="/#/">Blog</a></li>
+              <li class="menu-item"><a ng-mouseover="showDropDownMenu()" ng-mouseleave="hideDropDownMenu()" ng-click="gotoElement('about')">About</a></li>
           </ul>
         </div>
 
     </div>
   </nav>
-
+  <div class="container fluid hiddenDropDown" ng-hide="hidden">
+    <div class="row">
+      <p>
+        dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum
+      </p>
+    </div>
+  </div>
   <div class="container carousel">
     <div class="row" ng-controller="CarouselDemoCtrl" id="slides_control">
         <carousel interval="myInterval">

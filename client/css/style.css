@@ -57,6 +57,9 @@ body{
   border-bottom: 2px solid black;
 }
 
+.hiddenDropDown{
+  background: red;
+}
 
 .dropdown > a{
   font-family: "Helvetica Neue-bold",Helvetica,Arial,sans-serif;
