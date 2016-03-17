@@ -1,5 +1,21 @@
 var app = angular.module('sparktc');
 
+app.factory('carsoulSlides', function(){
+  return [
+
+    {
+      image: 'http://www.spark.tc/wp-content/themes/bones/library/images/datapalooza-hero.jpg'
+    },
+    {
+      image: 'http://www.spark.tc/wp-content/themes/bones/library/images/Redrock-Animation.gif'
+    },
+    {
+      image: 'http://www.spark.tc/wp-content/themes/bones/library/images/hiring-hero.png'
+    }
+
+  ];
+});
+
 app.service('anchorSmoothScroll', function(){
 
     this.scrollTo = function(eID) {
