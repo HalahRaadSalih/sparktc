@@ -14,11 +14,21 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="/client/css/style.css">
+    <!-- ui bootstrap for angular -->
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/1.1.2/ui-bootstrap-tpls.js"></script>
+   <script src="//cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/0.10.0/ui-bootstrap-tpls.min.js"></script>
+
+   <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.5.9/slick.css"/>
+   <!-- Add the slick-theme.css if you want default styling -->
+   <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.5.9/slick-theme.css"/>
 
   </head>
   <body>
     <!-- navbar -->
-    <nav class="navbar navbar-default navbar-fixed-top ">
+    <div class="">
+
+    </div>
+    <nav class="navbar navbar-default">
       <div class="container header">
         <div class="col-md-12">
           <div class="navbar-header">
@@ -53,13 +63,30 @@
     </div>
   </nav>
 
-  <!-- ng-view -->
-  <div ng-view>
+  <div class="container carousel">
+    <div class="row" ng-controller="CarouselDemoCtrl" id="slides_control">
+        <!-- <div> -->
+          <carousel interval="myInterval">
+            <slide ng-repeat="slide in slides" active="slide.active">
+              <img ng-src="{{slide.image}}">
+              <div class="carousel-caption">
+              </div>
+            </slide>
+          </carousel>
+        <!-- </div> -->
+    </div>
 
+    <!-- ng-view -->
+    <div ng-view>
+
+    </div>
   </div>
+
+
 
   <script src="/client/app.js"></script>
   <script src="/client/js/controller.js"></script>
+  <script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.5.9/slick.min.js"></script>
 
   </body>
 </html>

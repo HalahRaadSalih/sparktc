@@ -1,4 +1,4 @@
-var app = angular.module('sparktc', ['ngRoute', 'ngResource', , 'ngAnimate']);
+var app = angular.module('sparktc', ['ngRoute', 'ngResource', , 'ngAnimate','ui.bootstrap']);
 app.config(function($routeProvider, $locationProvider, $httpProvider){
 
   $routeProvider

@@ -6,6 +6,7 @@ body{
 
 .container{
   background: white;
+  max-width: 1024px;
 
 }
 
@@ -15,6 +16,9 @@ body{
   max-width: 1024px;
   padding: 20px 15px;
 
+}
+.navbar.navbar-default{
+  margin-bottom: 0px !important;
 }
 .navbar-default{
   border: 0px !important;
@@ -66,4 +70,23 @@ body{
 
 .resources > li{
   padding-left: 10px;
+}
+
+.carousel{
+  /*padding-top: 100px;*/
+  margin-top: 0px;
+  background: green;
+}
+#slides_control{
+  background: red;
+}
+
+/*img{
+  margin:auto;
+}*/
+div.car.ng-isolate-scrope{
+  margin-top: 0px !important;
+}
+#slides_control {
+  max-width:1024px;
 }
