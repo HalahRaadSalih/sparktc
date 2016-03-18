@@ -17,6 +17,10 @@ body{
   padding: 20px 15px;
 
 }
+
+#headerID{
+  position: relative;
+}
 .navbar.navbar-default{
   margin-bottom: 0px !important;
 }
@@ -46,6 +50,8 @@ body{
 }
 .menu-item {
   padding: 0px 15px;
+  margin-left: 10px;
+
 }
 
 .menu-item > a,
@@ -63,7 +69,13 @@ body{
 }
 
 .hiddenDropDown{
-  background: red;
+  background: #00455C;
+  position: absolute;
+  top: 100px;
+  left: 98;
+  z-index: 10;
+  width: 1024px;
+  height: 100px;
 }
 
 .dropdown > a{

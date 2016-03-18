@@ -11,16 +11,32 @@ app.controller('CarouselDemoCtrl',function($scope, carsoulSlides){
 
 app.controller('NavBarController', function($scope, $location, anchorSmoothScroll, resources) {
   $scope.resources = resources;
-  $scope.hidden = true;
+  $scope.outOfmenuItem = true;
+  $scope.outOfHidden = true;
+  $scope.hidden = $scope.outOfmenuItem && $scope.outOfHidden;
 
-  $scope.showDropDownMenu = function(){
-     $scope.hidden = false;
+
+  $scope.enterDropDownMenuItem = function(){
+    //  $scope.hidden = false;
+     $scope.outOfmenuItem = false;
+     $scope.hidden = $scope.outOfmenuItem && $scope.outOfHidden;
+
+  }
+  $scope.leftDropDownMenuItem = function(){
+    $scope.outOfmenuItem = true;
+    $scope.hidden = $scope.outOfmenuItem && $scope.outOfHidden;
+
+  }
+  $scope.enterHiddenMenu = function(){
+    $scope.outOfHidden = false;
+    $scope.hidden = $scope.outOfmenuItem && $scope.outOfHidden;
+  }
+  $scope.leftHiddenMenu = function(){
+    $scope.outOfHidden = true;
+    $scope.hidden = $scope.outOfmenuItem && $scope.outOfHidden;
+
   }
 
-  $scope.hideDropDownMenu = function(){
-     $scope.hidden = true;
-  }
-  
   $scope.gotoElement = function (eID){
     // set the location.hash to the id of
     // the element you wish to scroll to.
