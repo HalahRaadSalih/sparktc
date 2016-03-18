@@ -14,7 +14,7 @@ body{
   height: 100px;
   margin: 0 auto;
   max-width: 1024px;
-  padding: 20px 15px;
+  /*padding: 20px 15px;*/
 
 }
 
@@ -28,17 +28,24 @@ body{
   border: 0px !important;
   border-color: white !important;
 }
-
+#logo{
+  height: 100px;
+  padding-top: 35px;
+}
 #logo-spark, .about{
   font-family: "Helvetica Neue-bold",Helvetica,Arial,sans-serif;
   font-size: 25px;
   color: black;
+  padding: 15px 0px;
+
 }
 
 #logo-tc{
   font-family: "Helvetica Neue-light",Helvetica,Arial,sans-serif;
   font-size: 25px;
   color: #f05524;
+  padding: 15px 0px;
+
 }
 
 .logo-curlys{
@@ -48,10 +55,14 @@ body{
   font-weight: 100;
 
 }
-.menu-item {
-  padding: 0px 15px;
-  margin-left: 10px;
 
+#headerMenu, ul{
+  height: 100px;
+}
+
+.menu-item {
+  padding: 15px 15px;
+  height: 110px;
 }
 
 .menu-item > a,
@@ -61,6 +72,7 @@ body{
   font-weight: bold;
   padding-left: 0px !important;
   padding-right: 0px !important;
+  height: inherit;
 }
 
 .menu-item>a:hover,
@@ -78,12 +90,22 @@ body{
   height: 100px;
 }
 
+.btn{
+  margin-top: 35px;
+}
+
+.dropdown{
+  padding-top: 15px;
+}
+
 .dropdown > a{
   font-family: "Helvetica Neue-bold",Helvetica,Arial,sans-serif;
   color: black !important;
   font-weight: bold;
+}
 
-
+#dropdown-toggle{
+  height: 50px;
 }
 
 .resources{

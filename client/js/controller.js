@@ -15,26 +15,25 @@ app.controller('NavBarController', function($scope, $location, anchorSmoothScrol
   $scope.outOfHidden = true;
   $scope.hidden = $scope.outOfmenuItem && $scope.outOfHidden;
 
-
-  $scope.enterDropDownMenuItem = function(){
-    //  $scope.hidden = false;
-     $scope.outOfmenuItem = false;
-     $scope.hidden = $scope.outOfmenuItem && $scope.outOfHidden;
+  $scope.enterDropDownMenuItem = function(a){
+     $scope.hidden = false;
 
   }
   $scope.leftDropDownMenuItem = function(){
-    $scope.outOfmenuItem = true;
-    $scope.hidden = $scope.outOfmenuItem && $scope.outOfHidden;
+    $scope.hidden = true;
+    // if($scope.outOfHidden){
+    //   $scope.hidden = $scope.outOfmenuItem && $scope.outOfHidden;
+    // }
+
 
   }
   $scope.enterHiddenMenu = function(){
     $scope.outOfHidden = false;
-    $scope.hidden = $scope.outOfmenuItem && $scope.outOfHidden;
+
   }
   $scope.leftHiddenMenu = function(){
     $scope.outOfHidden = true;
-    $scope.hidden = $scope.outOfmenuItem && $scope.outOfHidden;
-
+    $scope.hidden = true;
   }
 
   $scope.gotoElement = function (eID){

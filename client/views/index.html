@@ -34,7 +34,7 @@
       <div class="container header" id="headerID">
         <div class="col-md-12">
           <div class="navbar-header">
-            <a class="navbar-brand" href="/#/">
+            <a class="navbar-brand" id="logo" href="/#/">
               <span class="logo-curlys">{</span>
               <span id="logo-spark">spark</span>
               <span id="logo-tc">.tc</span>
@@ -44,18 +44,18 @@
           <div class="collapse navbar-collapse navbar-right">
             <ul class="nav navbar-nav">
               <li class="dropdown">
-               <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Resources <span class="caret"></span></a>
+               <a href="#" class="dropdown-toggle" id ="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Resources <span class="caret"></span></a>
                <ul class="dropdown-menu resources">
                  <li ng-repeat="resource in resources">{{resource.name}}</li>
                </ul>
              </li>
             </ul>
           </div>
-          <ul class="nav navbar-nav navbar-right">
-              <li class="menu-item"><a ng-mouseover="enterDropDownMenuItem()"  ng-mouseleave="leftDropDownMenuItem()"  href="/#/">Community</a></li>
-              <li class="menu-item"><a ng-mouseover="enterDropDownMenuItem()"  ng-mouseleave="leftDropDownMenuItem()" href="/#/">Projects</a></li>
-              <li class="menu-item"><a ng-mouseover="enterDropDownMenuItem()"  ng-mouseleave="leftDropDownMenuItem()" href="/#/">Blog</a></li>
-              <li class="menu-item"><a ng-mouseover="enterDropDownMenuItem()"  ng-mouseleave="leftDropDownMenuItem()" ng-click="gotoElement('about')">About</a></li>
+          <ul class="nav navbar-nav navbar-right" id="headerMenu">
+              <li class="menu-item"><a ng-mouseenter="enterDropDownMenuItem(0)"  ng-mouseleave="leftDropDownMenuItem()"  href="/#/">Community</a></li>
+              <li class="menu-item"><a ng-mouseenter="enterDropDownMenuItem(0)"  ng-mouseleave="leftDropDownMenuItem()" href="/#/">Projects</a></li>
+              <li class="menu-item"><a ng-mouseenter="enterDropDownMenuItem(0)"  ng-mouseleave="leftDropDownMenuItem()" href="/#/">Blog</a></li>
+              <li class="menu-item"><a ng-mouseenter="enterDropDownMenuItem(0)"  ng-mouseleave="leftDropDownMenuItem()" ng-click="gotoElement('about')">About</a></li>
           </ul>
         </div>
         <div class="row hiddenDropDown" ng-hide="hidden" ng-mouseleave="leftHiddenMenu()" ng-mouseenter="enterHiddenMenu()">
