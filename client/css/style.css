@@ -12,8 +12,9 @@ body{
 }
 
 .header{
-  height: 100px;
+  height: 10%;
   margin: 0 auto;
+
 }
 
 #headerID{
@@ -56,12 +57,8 @@ body{
 
 }
 
-#headerMenu{
-  height: 100px;
-}
-
 .menu-item {
-  padding: 15px 15px;
+  padding: 35px 15px;
 }
 
 .menu-item > a{
