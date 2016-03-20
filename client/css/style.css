@@ -6,16 +6,11 @@ body{
 
 .container{
   background: white;
-  max-width: 1024px;
-
 }
 
 .header{
   height: 100px;
   margin: 0 auto;
-  max-width: 1024px;
-  /*padding: 20px 15px;*/
-
 }
 
 #headerID{
@@ -75,7 +70,6 @@ body{
 }
 
 .menu-item>a:hover{
-  /*border: 2px solid black;*/
 }
 
 .btn{
@@ -93,10 +87,10 @@ body{
 div.car.ng-isolate-scrope{
   margin-top: 0px !important;
 }
+
 #slides_control {
   height: 500px;
-  max-width:1024px;
-  background: url('http://www.spark.tc/wp-content/themes/bones/library/images/datapalooza-hero.jpg');
+  background: url('http://www.spark.tc/wp-content/themes/bones/library/images/Redrock-Animation.gif');
   background-size: cover;
 
 }
