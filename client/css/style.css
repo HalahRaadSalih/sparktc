@@ -65,7 +65,7 @@ body{
   font-weight: bold;
   padding: 5px  5px!important;
   height: inherit;
-  border: 2px solid black;
+  border: 2px solid #f05524;
 
 }
 
@@ -78,8 +78,10 @@ body{
 }
 .btn{
   margin-top: 1%;
-  font-size: 30px;
-  width: 30%;
+  font-size: 26px;
+  width: 20%;
+  background: #f05524;
+  color: white;
 }
 
 .dropdown > a{
