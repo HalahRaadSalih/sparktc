@@ -11,30 +11,6 @@ app.controller('CarouselDemoCtrl',function($scope, carsoulSlides){
 
 app.controller('NavBarController', function($scope, $location, anchorSmoothScroll, resources) {
   $scope.resources = resources;
-  $scope.outOfmenuItem = true;
-  $scope.outOfHidden = true;
-  $scope.hidden = $scope.outOfmenuItem && $scope.outOfHidden;
-
-  $scope.enterDropDownMenuItem = function(a){
-     $scope.hidden = false;
-
-  }
-  $scope.leftDropDownMenuItem = function(){
-    $scope.hidden = true;
-    // if($scope.outOfHidden){
-    //   $scope.hidden = $scope.outOfmenuItem && $scope.outOfHidden;
-    // }
-
-
-  }
-  $scope.enterHiddenMenu = function(){
-    $scope.outOfHidden = false;
-
-  }
-  $scope.leftHiddenMenu = function(){
-    $scope.outOfHidden = true;
-    $scope.hidden = true;
-  }
 
   $scope.gotoElement = function (eID){
     // set the location.hash to the id of
