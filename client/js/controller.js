@@ -4,7 +4,7 @@ app.controller('HomeController', function($scope){
 });
 
 app.controller('CarouselDemoCtrl',function($scope, carsoulSlides){
-  $scope.myInterval = 3000;
+  $scope.myInterval = 500;
   $scope.slides = carsoulSlides;
 });
 

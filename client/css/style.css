@@ -62,41 +62,27 @@ body{
 
 .menu-item {
   padding: 15px 15px;
-  height: 110px;
 }
 
-.menu-item > a,
-.dropdown > a{
+.menu-item > a{
   font-family: "Helvetica Neue-bold",Helvetica,Arial,sans-serif;
   color: black !important;
   font-weight: bold;
-  padding-left: 0px !important;
-  padding-right: 0px !important;
+  padding: 5px  5px!important;
   height: inherit;
+  border: 2px solid black;
+
 }
 
-.menu-item>a:hover,
-.dropdown > a:hover {
-  border-bottom: 2px solid black;
-}
-
-.hiddenDropDown{
-  background: #00455C;
-  position: absolute;
-  top: 100px;
-  left: 98;
-  z-index: 10;
-  width: 1024px;
-  height: 100px;
+.menu-item>a:hover{
+  /*border: 2px solid black;*/
 }
 
 .btn{
   margin-top: 35px;
 }
 
-.dropdown{
-  padding-top: 15px;
-}
+
 
 .dropdown > a{
   font-family: "Helvetica Neue-bold",Helvetica,Arial,sans-serif;
@@ -104,29 +90,13 @@ body{
   font-weight: bold;
 }
 
-#dropdown-toggle{
-  height: 50px;
-}
-
-.resources{
-  right:auto;
-}
-
-.resources > li{
-  padding-left: 10px;
-}
-
-.carousel{
-  margin-top: 0px;
-}
-.icon-next,
-.icon-prev{
-  color: transparent;
-  text-shadow: none;
-}
 div.car.ng-isolate-scrope{
   margin-top: 0px !important;
 }
 #slides_control {
+  height: 500px;
   max-width:1024px;
+  background: url('http://www.spark.tc/wp-content/themes/bones/library/images/datapalooza-hero.jpg');
+  background-size: cover;
+
 }
