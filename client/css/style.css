@@ -72,11 +72,15 @@ body{
 .menu-item>a:hover{
 }
 
-.btn{
-  margin-top: 35px;
+.sloganName{
+  color: white;
+  margin-top: 22%;
 }
-
-
+.btn{
+  margin-top: 1%;
+  font-size: 30px;
+  width: 30%;
+}
 
 .dropdown > a{
   font-family: "Helvetica Neue-bold",Helvetica,Arial,sans-serif;
