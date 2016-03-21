@@ -162,7 +162,7 @@ app.factory('partnerTypes', function(){
     },
     {
       title:"Development Expert",
-      image:"http://www.spark.tc/wp-content/themes/bones/library/images/hiring-hero.png",
+      image:"http://www.spark.tc/wp-content/themes/bones/library/images/datapalooza-hero.jpg",
       description:'What follows is a proposal for each ecosystem partner cohort with "friendship" tiers based on their level of involvement or some level of "contribution," (e.g.financial, engagement, or virtual currency).',
       headTitles:['Development Expert', 'Acquaintance', 'Friend', 'BFF'],
       benefits:[
