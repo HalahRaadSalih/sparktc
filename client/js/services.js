@@ -115,3 +115,121 @@ app.service('anchorSmoothScroll', function(){
     };
 
 });
+
+app.factory('partnerTypes', function(){
+
+  return [
+    {
+      title:"Business Leader",
+      image:"http://www.spark.tc/wp-content/themes/bones/library/images/hiring-hero.png",
+      description:'What follows is a proposal for each ecosystem partner cohort with "friendship" tiers based on their level of involvement or some level of "contribution," (e.g.financial, engagement, or virtual currency).',
+      headTitles:['Business Leader', 'Acquaintance', 'Friend', 'BFF'],
+      benefits:[
+        {
+          title:"Training / Skills Development",
+          checkList:["✓","✓","✓"]
+        },
+        {
+          title:"Direct Slack to Members",
+          checkList:["","✓","✓"]
+        },
+        {
+          title:"Gets the Member List",
+          checkList:["", "✓", "✓"]
+        },
+        {
+          title:"Inclusion on our Blog",
+          checkList:["", "", "✓"]
+        },
+        {
+          title:"Gets The Member List",
+          checkList:["", "✓", "✓"]
+        },
+        {
+          title:"Hangouts with Our Friends",
+          checkList:["✓", "✓", "✓"]
+        },
+        {
+          title:"Partner Advisory Council",
+          checkList:["", "", "✓"]
+        },
+        {
+          title:"Use Case Examples",
+          checkList:["✓","✓","✓"]
+        }
+
+      ]
+    },
+    {
+      title:"Development Expert",
+      image:"http://www.spark.tc/wp-content/themes/bones/library/images/hiring-hero.png",
+      description:'What follows is a proposal for each ecosystem partner cohort with "friendship" tiers based on their level of involvement or some level of "contribution," (e.g.financial, engagement, or virtual currency).',
+      headTitles:['Development Expert', 'Acquaintance', 'Friend', 'BFF'],
+      benefits:[
+        {
+          title:"Code Contribution Training",
+          checkList:["✓","✓","✓"]
+        },
+        {
+          title:"Roadmap Reviews",
+          checkList:["","","✓"]
+        },
+        {
+          title:"Code Review by Expert",
+          checkList:["", "✓", "✓"]
+        },
+        {
+          title:"Discounted Reference Books",
+          checkList:["✓", "✓", "✓"]
+        },
+        {
+          title:"Co-development (prototypes and integrations)",
+          checkList:["", "✓", "✓"]
+        },
+        {
+          title:"Technical Advisory Council",
+          checkList:["", "", "✓"]
+        }
+      ]
+  },
+  {
+    title:"Application Maker",
+    image:"http://www.spark.tc/wp-content/themes/bones/library/images/hiring-hero.png",
+    description:'What follows is a proposal for each ecosystem partner cohort with "friendship" tiers based on their level of involvement or some level of "contribution," (e.g.financial, engagement, or virtual currency).',
+    headTitles:['Application Maker', 'Acquaintance', 'Friend', 'BFF'],
+    benefits:[
+      {
+        title:"Reference Architectures",
+        checkList:["✓","✓","✓"]
+      },
+      {
+        title:"Design Workshop",
+        checkList:["","","✓"]
+      },
+      {
+        title:"Data Sources",
+        checkList:["✓", "✓", "✓"]
+      },
+      {
+        title:"Free Open Analytics Tech",
+        checkList:["", "✓", "✓"]
+      },
+      {
+        title:"Assigned Agile Coach",
+        checkList:["", "", "✓"]
+      },
+      {
+        title:"Datapalooza and Partner Data Science Event Access",
+        checkList:["✓", "✓", "✓"]
+      },
+      {
+        title:"Application Exposure to Executive Clients",
+        checkList:["", "✓", "✓"]
+      },
+      {
+        title:"Executive Mentorship",
+        checkList:["", "", "✓"]
+      }
+    ]
+  }];
+});

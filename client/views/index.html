@@ -78,6 +78,7 @@
       <div class="col-md-12">
         <div class="">
           <h3 class="">About</h3>
+          <br>
           <p>
             {{content.about}}
           </p>
@@ -86,101 +87,56 @@
     </div>
   </div>
 
-  <div class="container img-rounded" id="about" ng-controller="AboutController">
+  <div class="container img-rounded" id="about" ng-controller="AboutController" ng-repeat="type in partnerTypes">
     <div class="row">
       <div class="col-md-12">
         <div class="col-md-6">
-          <img class="img-responsive img-rounded" src="http://www.spark.tc/wp-content/themes/bones/library/images/hiring-hero.png" alt="" />
+          <img class="img-responsive img-rounded" ng-src="{{type.image}}" alt="" />
         </div>
         <div class="col-md-6">
-          <h3>Business Leaders</h3>
+          <h3>{{type.title}}</h3>
+          <br>
           <p>
-            What follows is a proposal for each ecosystem partner cohort with "friendship" tiers based on their level of involvement or some level of "contribution," (e.g.financial, engagement, or virtual currency).
+            {{type.description}}
           </p>
         </div>
       </div>
     </div>
      <br>
      <br>
+     <br>
+     <br>
+     <br>
+     <br>
+     <br>
+     <div class="row">
+       <div class="col-md-12">
+         <div class="table-responsive">
+           <table class="table table-hover">
+             <thead class="thead-inverse">
+               <tr>
+                 <th ng-repeat="head in type.headTitles">
+                   {{head}}
+                 </th>
+               </tr>
+             </thead>
+             <tbody>
+               <tr ng-repeat="benefit in type.benefits">
+                 <td>{{benefit.title}}</td>
+                 <td class="text-success" ng-repeat="check in benefit.checkList track by $index">{{check}}</td>
+               </tr>
+             </tbody>
+           </table>
+         </div>
+
+       </div>
+     </div>
   </div>
 
   <div class="container img-rounded">
-    <div class="row">
-      <div class="col-md-12">
-        <div class="table-responsive">
-          <table class="table table-hover">
-            <thead class="thead-inverse">
-              <tr>
-                <th>
-                  Business Leader
-                </th>
-                <th>
-                  Acquaintance
-                </th>
-                <th>
-                  Friend
-                </th>
-                <th>
-                  BFF
-                </th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>Training / Skills Development</td>
-                <td class="text-success">✓</td>
-                <td class="text-success">✓</td>
-                <td class="text-success">✓</td>
-              </tr>
-              <tr>
-                <td>Direct Slack to Members</td>
-                <td></td>
-                <td class="text-success">✓</td>
-                <td class="text-success">✓</td>
-              </tr>
-              <tr>
-                <td>Gets the Member List</td>
-                <td></td>
-                <td></td>
-                <td class="text-success">✓</td>
-              </tr>
-              <tr>
-                <td>Inclusion on our Blog</td>
-                <td></td>
-                <td class="text-success">✓</td>
-                <td class="text-success">✓</td>
-              </tr>
-              <tr>
-                <td>Gets The Member List</td>
-                <td></td>
-                <td></td>
-                <td class="text-success">✓</td>
-              </tr>
-              <tr>
-                <td>Hangouts with Our Friends</td>
-                <td class="text-success">✓</td>
-                <td class="text-success">✓</td>
-                <td class="text-success">✓</td>
-              </tr>
-              <tr>
-                <td>Partner Advisory Council</td>
-                <td></td>
-                <td></td>
-                <td class="text-success" >✓</td>
-              </tr>
-              <tr>
-                <td>Use Case Examples</td>
-                <td class="text-success">✓</td>
-                <td class="text-success">✓</td>
-                <td class="text-success">✓</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
 
-      </div>
-    </div>
   </div>
+
   <script src="/client/app.js"></script>
   <script src="/client/js/controller.js"></script>
   <script src="/client/js/services.js"></script>
