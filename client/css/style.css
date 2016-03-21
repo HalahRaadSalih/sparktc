@@ -10,7 +10,9 @@ body{
   margin-bottom: 5%;
   padding: 3% 1%;
 }
-
+#navbar-container{
+  background: #f7f7f7;
+}
 .header{
   height: 10%;
   margin: 0 auto;
