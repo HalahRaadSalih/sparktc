@@ -1,11 +1,11 @@
 body{
   font-family: "HelveticaNeue-light",Helvetica,Arial,sans-serif;
   color: black;
-  background: #f7f7f7;
+  background: white;
 }
 
 .container{
-  background: #f7f7f7;
+  background: white;
   margin-top: 5%;
   margin-bottom: 5%;
   padding: 3% 1%;
@@ -114,4 +114,36 @@ div.car.ng-isolate-scrope{
 
 .pull-right{
   float: right !important;
+}
+
+.footer{
+  height: 20%;
+  background: #f7f7f7;
+}
+.footer > div> div>p{
+	margin-top: 15px;
+}
+
+.ng-enter {
+  transition:0.4s ease-in-out;
+  opacity:0;
+}
+
+.ng-enter.ng-enter-active {
+  transition:0.4s ease-in-out;
+  opacity:1;
+}
+
+.ng-leave {
+  transition:0.4s ease-in-out;
+  opacity:1;
+}
+
+.ng-leave.ng-leave-active {
+  opacity:0;
+}
+
+.ng-enter-stagger, .ng-leave-stagger {
+  transition-delay: 0.2s;
+  transition-duration:0;
 }

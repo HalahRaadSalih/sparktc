@@ -9,11 +9,15 @@ app.controller('CarouselDemoCtrl',function($scope, carsoulSlides){
 });
 
 
-app.controller('NavBarController', function($scope, $location, anchorSmoothScroll, resources, partners, partnerTypes) {
+app.controller('NavBarController', function($scope, $location, anchorSmoothScroll, resources, partners, partnerTypes, $timeout) {
   $scope.resources = resources;
   $scope.partners = partners;
-  $scope.partnerTypes = partnerTypes;
-  
+
+  $timeout(function () {
+    $scope.partnerTypes = partnerTypes;
+
+  }, 10);
+
   $scope.gotoElement = function (eID){
     // set the location.hash to the id of
     // the element you wish to scroll to.
