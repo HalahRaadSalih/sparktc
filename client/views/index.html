@@ -90,7 +90,7 @@
   <div class="container img-rounded" id="about" ng-controller="AboutController" ng-repeat="type in partnerTypes">
     <div class="row">
       <div class="col-md-12">
-        <div class="col-md-6">
+        <div class="col-md-6" ng-class-even="'pull-right'" ng-class-odd="'pull-left'">
           <img class="img-responsive img-rounded" ng-src="{{type.image}}" alt="" />
         </div>
         <div class="col-md-6">
