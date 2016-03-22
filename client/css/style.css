@@ -101,7 +101,7 @@ div.car.ng-isolate-scrope{
   margin-top: 0px !important;
 }
 
-#slides_control {
+#slides_control,.partner-background{
   height: 500px;
   background: url('http://www.spark.tc/wp-content/themes/bones/library/images/Redrock-Animation.gif');
   background-size: cover;
