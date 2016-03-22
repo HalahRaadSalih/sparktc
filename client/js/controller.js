@@ -1,22 +1,6 @@
 var app = angular.module('sparktc');
 
-app.controller('HomeController', function($scope){
-});
-
-app.controller('CarouselDemoCtrl',function($scope, carsoulSlides){
-  $scope.myInterval = 500;
-  $scope.slides = carsoulSlides;
-});
-
-
-app.controller('NavBarController', function($scope, $location, anchorSmoothScroll, resources, partners, partnerTypes, $timeout) {
-  $scope.resources = resources;
-  $scope.partners = partners;
-
-  $timeout(function () {
-    $scope.partnerTypes = partnerTypes;
-
-  }, 10);
+app.controller('NavBarController', function($scope, $location, anchorSmoothScroll) {
 
   $scope.gotoElement = function (eID){
     // set the location.hash to the id of
@@ -29,7 +13,15 @@ app.controller('NavBarController', function($scope, $location, anchorSmoothScrol
   };
 });
 
-app.controller('AboutController', function($scope, aboutContent){
+app.controller('HomeController', function($scope, $location, anchorSmoothScroll, resources, partners, partnerTypes, $timeout,aboutContent){
+  $scope.resources = resources;
+  $scope.partners = partners;
+  $scope.partnerTypes = partnerTypes;
+
   $scope.content = {};
   $scope.content.about = aboutContent;
+});
+
+app.controller('PartnerController', function($scope){
+
 });

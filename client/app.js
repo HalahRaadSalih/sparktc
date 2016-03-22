@@ -6,6 +6,10 @@ app.config(function($routeProvider, $locationProvider, $httpProvider){
     templateUrl: '/client/views/home.html',
     controller: 'HomeController'
   })
+  .when('/partner',{
+    templateUrl:'/client/views/partner.html',
+    controller:'PartnerController'
+  })
   .otherwise({
     redirectTo: '/'
   });
