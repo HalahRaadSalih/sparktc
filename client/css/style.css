@@ -7,8 +7,9 @@ body{
 .container{
   background: white;
   margin-top: 5%;
-  margin-bottom: 5%;
-  padding: 3% 1%;
+}
+.row{
+  margin-bottom: 100px;
 }
 #navbar-container{
   background: #f7f7f7;
@@ -108,13 +109,19 @@ div.car.ng-isolate-scrope{
 
 }
 
+#about{
+  margin-top: 2%;
+}
+.about-text{
+  padding: 1% 2%;
+}
+
 @media (min-width: 320px) {
     .partners-logo {
       width: 25%;
       height: 25%;
       }
 }
-
 
 .pull-left{
    float: left !important;
