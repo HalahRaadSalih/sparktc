@@ -130,6 +130,14 @@ app.factory('partnerTypes', function(){
           checkList:["✓","✓","✓"]
         },
         {
+          title:"Hangouts with Our Friends",
+          checkList:["✓", "✓", "✓"]
+        },
+        {
+          title:"Use Case Examples",
+          checkList:["✓","✓","✓"]
+        },
+        {
           title:"Direct Slack to Members",
           checkList:["","✓","✓"]
         },
@@ -138,24 +146,16 @@ app.factory('partnerTypes', function(){
           checkList:["", "✓", "✓"]
         },
         {
-          title:"Inclusion on our Blog",
-          checkList:["", "", "✓"]
-        },
-        {
           title:"Gets The Member List",
           checkList:["", "✓", "✓"]
         },
         {
-          title:"Hangouts with Our Friends",
-          checkList:["✓", "✓", "✓"]
+          title:"Inclusion on our Blog",
+          checkList:["", "", "✓"]
         },
         {
           title:"Partner Advisory Council",
           checkList:["", "", "✓"]
-        },
-        {
-          title:"Use Case Examples",
-          checkList:["✓","✓","✓"]
         }
 
       ]
@@ -171,20 +171,20 @@ app.factory('partnerTypes', function(){
           checkList:["✓","✓","✓"]
         },
         {
-          title:"Roadmap Reviews",
-          checkList:["","","✓"]
+          title:"Discounted Reference Books",
+          checkList:["✓", "✓", "✓"]
         },
         {
           title:"Code Review by Expert",
           checkList:["", "✓", "✓"]
         },
         {
-          title:"Discounted Reference Books",
-          checkList:["✓", "✓", "✓"]
-        },
-        {
           title:"Co-development (prototypes and integrations)",
           checkList:["", "✓", "✓"]
+        },
+        {
+          title:"Roadmap Reviews",
+          checkList:["","","✓"]
         },
         {
           title:"Technical Advisory Council",
@@ -203,20 +203,8 @@ app.factory('partnerTypes', function(){
         checkList:["✓","✓","✓"]
       },
       {
-        title:"Design Workshop",
-        checkList:["","","✓"]
-      },
-      {
         title:"Data Sources",
         checkList:["✓", "✓", "✓"]
-      },
-      {
-        title:"Free Open Analytics Tech",
-        checkList:["", "✓", "✓"]
-      },
-      {
-        title:"Assigned Agile Coach",
-        checkList:["", "", "✓"]
       },
       {
         title:"Datapalooza and Partner Data Science Event Access",
@@ -227,9 +215,21 @@ app.factory('partnerTypes', function(){
         checkList:["", "✓", "✓"]
       },
       {
+        title:"Free Open Analytics Tech",
+        checkList:["", "✓", "✓"]
+      },
+      {
         title:"Executive Mentorship",
         checkList:["", "", "✓"]
-      }
+      },
+      {
+        title:"Design Workshop",
+        checkList:["","","✓"]
+      },
+      {
+        title:"Assigned Agile Coach",
+        checkList:["", "", "✓"]
+      },
     ]
   }];
 });
