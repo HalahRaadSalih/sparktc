@@ -6,11 +6,12 @@ body{
 
 .container{
   background: white;
-  margin-top: 5%;
 }
+
 .row{
   margin-bottom: 100px;
 }
+
 #navbar-container{
   background: #f7f7f7;
 }
@@ -138,4 +139,16 @@ div.car.ng-isolate-scrope{
 }
 .footer > div> div>p{
 	margin-top: 15px;
+}
+
+.acquaintance-color{
+  color: #93AF43;
+}
+
+.friend-color{
+  color: #F0AA1E;
+}
+
+.bff-color{
+  color: #348E9C;
 }
