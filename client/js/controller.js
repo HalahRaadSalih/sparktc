@@ -22,6 +22,6 @@ app.controller('HomeController', function($scope, $location, anchorSmoothScroll,
   $scope.content.about = aboutContent;
 });
 
-app.controller('PartnerController', function($scope){
-
+app.controller('PartnerController', function($scope, partnerBenefits){
+  $scope.benefits = partnerBenefits;
 });

@@ -233,3 +233,101 @@ app.factory('partnerTypes', function(){
     ]
   }];
 });
+
+app.factory('partnerBenefits',function(){
+  return [
+    {
+      title:"Community",
+      image:"http://www.spark.tc/wp-content/themes/bones/library/images/hiring-hero.png",
+      description:"",
+      headTitles:['Community', 'Amount', 'Status'],
+      benefits:[
+        {
+          title: 'Attend Open Analytics Meetups',
+          amount: '5',
+          Status: 'Acquaintance'
+        },
+        {
+          title: 'Host Open Analytics Meetups',
+          amount: '5',
+          Status: 'Friend'
+        },
+        {
+          title: 'Speak at Open Analytics Meetups',
+          amount: '5',
+          Status: 'BFF'
+        }
+      ]
+    },
+    {
+      title:"Skills/Training",
+      image:"http://www.spark.tc/wp-content/themes/bones/library/images/hiring-hero.png",
+      description:"",
+      headTitles:['Skills / Training', 'Amount', 'Status'],
+      benefits:[
+        {
+          title: 'Free Tools',
+          amount: '1',
+          Status: 'Acquaintance'
+        },
+        {
+          title: 'Course Materials',
+          amount: '3',
+          Status: 'Friend'
+        },
+        {
+          title: 'Experts Training',
+          amount: '5',
+          Status: 'BFF'
+        }
+      ]
+    },
+    {
+      title:"Open Source Contributions",
+      image:"http://www.spark.tc/wp-content/themes/bones/library/images/hiring-hero.png",
+      description:"",
+      headTitles:['Open Source Contributions', 'Amount', 'Status'],
+      benefits:[
+        {
+          title: 'Bug Fixing',
+          amount: '20',
+          Status: 'Acquaintance'
+        },
+        {
+          title: 'Feature Requirements',
+          amount: '15',
+          Status: 'Friend'
+        },
+        {
+          title: 'JIRA',
+          amount: '10',
+          Status: 'BFF'
+        }
+      ]
+    },
+    {
+      title:"Application Design",
+      image:"http://www.spark.tc/wp-content/themes/bones/library/images/hiring-hero.png",
+      description:"",
+      headTitles:['Application Design', 'Amount', 'Status'],
+      benefits:[
+        {
+          title: 'Application and Use Case',
+          amount: '10',
+          Status: 'Acquaintance'
+        },
+        {
+          title: 'Architecture with Design Plan',
+          amount: '2',
+          Status: 'Friend'
+        },
+        {
+          title: 'Complete Data Product',
+          amount: '1',
+          Status: 'BFF'
+        }
+      ]
+    }
+
+  ];
+});

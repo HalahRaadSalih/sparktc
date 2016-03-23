@@ -34,7 +34,7 @@
       <div class="row">
         <div class="col-md-12 col-md-offset">
           <div class="text-center">
-            <h3>Partner Status And Benefits</h3>
+            <h3>Partner Status</h3>
             <br>
             <br>
             <p class="text-justify about-text">
@@ -60,17 +60,82 @@
                 <i class="fa fa-book fa-stack-1x fa-inverse"></i>
             </span>
             <h3 >Friend</h3>
-
           </div>
           <div class="partner-status">
             <span class="fa-stack fa-8x icons lg">
                 <i class="fa fa-circle fa-stack-2x bff-color"></i>
                 <i class="fa fa-book fa-stack-1x fa-inverse"></i>
             </span>
-            <h3 >BFF</h3>
-
+            <h3>BFF</h3>
           </div>
         </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 col-md-offset">
+          <div class="text-center">
+            <h3>Partner Benefits</h3>
+            <br>
+            <br>
+            <p class="text-justify about-text">
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container img-rounded"  ng-repeat="type in benefits">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="col-md-6" ng-class-even="'pull-right'" ng-class-odd="'pull-left'">
+            <img class="img-responsive img-rounded" ng-src="{{type.image}}" alt="" />
+          </div>
+          <div class="col-md-6">
+            <h3>{{type.title}}</h3>
+            <br>
+            <p>
+              {{type.description}}
+            </p>
+          </div>
+        </div>
+      </div>
+       <br>
+       <br>
+       <br>
+       <br>
+       <br>
+       <br>
+       <br>
+       <div class="row">
+         <div class="col-md-12">
+           <div class="table-responsive">
+             <table class="table table-hover">
+               <thead class="thead-inverse">
+                 <tr>
+                   <th ng-repeat="head in type.headTitles">
+                     {{head}}
+                   </th>
+                 </tr>
+               </thead>
+               <tbody>
+                 <tr ng-repeat="benefit in type.benefits">
+                   <td>{{benefit.title}}</td>
+                   <td>{{benefit.amount}}</td>
+                   <td ng-class="benefit.Status === 'Acquaintance' ? 'acquaintance-color' : (benefit.Status === 'Friend' ? 'friend-color' : 'bff-color')">{{benefit.Status}}</td>
+                 </tr>
+               </tbody>
+             </table>
+           </div>
+
+         </div>
+       </div>
+    </div>
+
+    <div class="container">
+      <div class="row text-center">
+        <h4>Ready to be part of IBM Open Analytics Ecosystem Community?</h4>
+        <a  class="btn btn text-center" href="/#/partner">Apply Now</a>
       </div>
     </div>
   </body>
