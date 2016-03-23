@@ -122,7 +122,7 @@ app.factory('partnerTypes', function(){
     {
       title:"Business Leader",
       image:"http://www.spark.tc/wp-content/themes/bones/library/images/hiring-hero.png",
-      description:'What follows is a proposal for each ecosystem partner cohort with "friendship" tiers based on their level of involvement or some level of "contribution," (e.g.financial, engagement, or virtual currency).',
+      description:'Business leaders identify innovative ways to transform their business model with data. There is a growing community around Apache Spark who\'s members are interested in driving Open Analytics Ecosystem adoption in their business.',
       headTitles:['Business Leader', 'Acquaintance', 'Friend', 'BFF'],
       benefits:[
         {
@@ -163,7 +163,7 @@ app.factory('partnerTypes', function(){
     {
       title:"Development Expert",
       image:"http://www.spark.tc/wp-content/themes/bones/library/images/datapalooza-hero.jpg",
-      description:'What follows is a proposal for each ecosystem partner cohort with "friendship" tiers based on their level of involvement or some level of "contribution," (e.g.financial, engagement, or virtual currency).',
+      description:'Development experts use Open Analytics Ecosystem Community to share new innovations and receive feedback from their peers on whether an additional piece of technology is necessary and vet the technology for market adoption.',
       headTitles:['Development Expert', 'Acquaintance', 'Friend', 'BFF'],
       benefits:[
         {
@@ -195,7 +195,7 @@ app.factory('partnerTypes', function(){
   {
     title:"Application Maker",
     image:"http://www.spark.tc/wp-content/themes/bones/library/images/hiring-hero.png",
-    description:'What follows is a proposal for each ecosystem partner cohort with "friendship" tiers based on their level of involvement or some level of "contribution," (e.g.financial, engagement, or virtual currency).',
+    description:'Application Makers who wish to build applications for the business with Apache Spark don\'t have to worry about compatibility, system integrations, data source connections, and decipher complex pricing to know how to make money from their application. Application makers seek direct feedback from early adopters of an Open Analytics Ecosystem.',
     headTitles:['Application Maker', 'Acquaintance', 'Friend', 'BFF'],
     benefits:[
       {
