@@ -10,6 +10,10 @@ app.config(function($routeProvider, $locationProvider, $httpProvider){
     templateUrl:'/client/views/partner.html',
     controller:'PartnerController'
   })
+  .when('/partner/apply',{
+    templateUrl:'/client/views/applyPartner.html',
+    controller:'ApplyPartnerController'
+  })
   .otherwise({
     redirectTo: '/'
   });
