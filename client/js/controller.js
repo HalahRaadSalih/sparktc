@@ -27,5 +27,7 @@ app.controller('PartnerController', function($scope, partnerBenefits){
 });
 
 app.controller('ApplyPartnerController', function($scope){
-  
+    $scope.submit = function(partner){
+      console.log(partner);
+    }
 });
