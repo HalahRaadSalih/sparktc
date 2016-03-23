@@ -85,12 +85,17 @@ body{
   color: white;
   margin-top: 23%;
 }
-.btn{
+.btn-eco{
   margin-top: 1%;
   font-size: 26px;
   background: #f05524;
   color: white;
   font-size: 1.5vw;
+}
+
+.btn-submit{
+  background: #f05524;
+  color: white;
 }
 
 .dropdown > a{
@@ -134,7 +139,7 @@ div.car.ng-isolate-scrope{
 }
 
 .footer{
-  height: 20%;
+  height: 10%;
   background: #f7f7f7;
 }
 .footer > div> div>p{
