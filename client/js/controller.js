@@ -26,8 +26,11 @@ app.controller('PartnerController', function($scope, partnerBenefits){
   $scope.benefits = partnerBenefits;
 });
 
-app.controller('ApplyPartnerController', function($scope){
+app.controller('ApplyPartnerController', function($scope, partnerBenefits){
+  $scope.benefits = partnerBenefits;
+
     $scope.submit = function(partner){
       console.log(partner);
+
     }
 });
