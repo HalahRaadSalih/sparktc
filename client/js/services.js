@@ -44,16 +44,20 @@ app.factory('resources', function(){
 app.factory('partners', function(){
   return [
     {
-      image:'http://www.spark.tc/wp-content/themes/bones/library/images/IBM.svg'
+      image:'http://www.spark.tc/wp-content/themes/bones/library/images/IBM.svg',
+      url:"http://www.ibm.com/us-en/"
     },
     {
-      image:'http://www.spark.tc/wp-content/themes/bones/library/images/amplab.svg'
+      image:'http://www.spark.tc/wp-content/themes/bones/library/images/amplab.svg',
+      url:"https://amplab.cs.berkeley.edu/"
     },
     {
-      image:'http://www.spark.tc/wp-content/themes/bones/library/images/Typesafe.svg'
+      image:'http://www.spark.tc/wp-content/themes/bones/library/images/Typesafe.svg',
+      url:"https://www.lightbend.com/company"
     },
     {
-      image:'http://www.spark.tc/wp-content/themes/bones/library/images/databricks.svg'
+      image:'http://www.spark.tc/wp-content/themes/bones/library/images/databricks.svg',
+      url:"https://databricks.com/"
     }
   ];
 });
