@@ -11,7 +11,7 @@
 
 
 </div>
-<div class="container">
+<div class="container container-info">
   <div class="row">
     <div class="col-md-12">
       <!-- <div class="col-md-3 partners-logo" > -->
@@ -21,7 +21,7 @@
   </div>
 </div>
 
-<div class="container img-rounded" id="about">
+<div class="container img-rounded container-info" id="about">
   <div class="row">
     <div class="col-md-12 col-md-offset">
       <div class="text-center">
@@ -36,7 +36,7 @@
   </div>
 </div>
 
-<div class="container img-rounded" id="about">
+<div class="container img-rounded container-info" id="about">
   <div class="row">
     <div class="col-md-12">
       <div class="">
@@ -46,8 +46,8 @@
   </div>
 </div>
 
-<div class="container img-rounded" id="about" ng-repeat="type in partnerTypes">
-  <div class="row">
+<div class="container img-rounded container-types" id="about" ng-repeat="type in partnerTypes">
+  <div class="row row-type">
     <div class="col-md-12">
       <div class="col-md-6" ng-class-even="'pull-right'" ng-class-odd="'pull-left'">
         <img class="img-responsive img-rounded" ng-src="{{type.image}}" alt="" />
@@ -61,14 +61,7 @@
       </div>
     </div>
   </div>
-   <br>
-   <br>
-   <br>
-   <br>
-   <br>
-   <br>
-   <br>
-   <div class="row">
+   <div class="row row-type">
      <div class="col-md-12">
        <div class="table-responsive">
          <table class="table table-hover">

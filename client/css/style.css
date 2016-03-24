@@ -8,10 +8,24 @@ body{
   background: white;
 }
 
-.row{
-  margin-bottom: 100px;
+/*.row{
+  margin-bottom: 50px;
+}*/
+.container-info{
+  margin-bottom: 5%;
+  margin-top: 5%;
+
 }
 
+.container-types{
+  margin-bottom: 1%;
+  margin-top: 1%;
+}
+
+.row-type{
+  margin-bottom: 5%;
+  margin-top: 5%;
+}
 #navbar-container{
   background: #f7f7f7;
 }
@@ -115,9 +129,6 @@ div.car.ng-isolate-scrope{
 
 }
 
-#about{
-  margin-top: 2%;
-}
 .about-text{
   padding: 1% 2%;
 }
