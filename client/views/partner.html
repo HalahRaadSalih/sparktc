@@ -80,8 +80,8 @@
                </thead>
                <tbody>
                  <tr ng-repeat="benefit in type.benefits">
-                   <td>{{benefit.title}}</td>
-                   <td>{{benefit.amount}}</td>
+                   <td class="p-table"> <p >{{benefit.title}}</p></td>
+                   <td> <p class="p-table">{{benefit.amount}}</p></td>
                    <td ng-class="benefit.Status === 'Acquaintance' ? 'acquaintance-color' : (benefit.Status === 'Friend' ? 'friend-color' : 'bff-color')">{{benefit.Status}}</td>
                  </tr>
                </tbody>
