@@ -1,7 +1,6 @@
 body{
   font-family: "HelveticaNeue-light",Helvetica,Arial,sans-serif;
   color: black;
-  background: white;
 }
 
 .container{
@@ -11,10 +10,10 @@ body{
 #navbar-container{
   background: #f7f7f7;
 }
+
 .header{
   height: 10%;
   margin: 0 auto;
-
 }
 
 #headerID{
@@ -40,7 +39,6 @@ body{
   font-size: 25px;
   color: black;
   padding: 15px 0px;
-
 }
 
 #logo-tc{
@@ -48,7 +46,6 @@ body{
   font-size: 25px;
   color: #f05524;
   padding: 15px 0px;
-
 }
 
 .logo-curlys{
@@ -142,6 +139,8 @@ div.car.ng-isolate-scrope{
     .partners-logo {
       width: 20%;
       height: 55px;
+      margin-left: 10px;
+      margin-right: 10px;
       }
 }
 
