@@ -11,12 +11,11 @@
 
 
 </div>
+
 <div class="container container-info">
   <div class="row">
     <div class="col-md-12">
-      <!-- <div class="col-md-3 partners-logo" > -->
         <img ng-repeat="partner in partners" class="partners-logo" ng-src="{{partner.image}}" alt="" />
-      <!-- </div> -->
     </div>
   </div>
 </div>
@@ -28,7 +27,7 @@
         <h3>IBM & Apache Spark Solve The Challenge Our Partners Face To Create Real Business Value With Apache Spark</h3>
         <br>
         <br>
-        <p class="text-justify about-text">
+        <p class="text-justify about-text p-description">
           {{content.about}}
         </p>
       </div>
@@ -40,7 +39,11 @@
   <div class="row">
     <div class="col-md-12">
       <div class="">
-        <h3 class="text-center">Partner Types</h3>
+        <h3 class="text-center">
+          <span class="logo-curlys">{</span>
+          <span class="logo-spark">Partner Types</span>
+          <span class="logo-curlys">}</span>
+        </h3>
       </div>
     </div>
   </div>

@@ -35,7 +35,7 @@ body{
   padding-top: 35px;
 }
 
-#logo-spark, .about{
+.logo-spark, .about{
   font-family: "Helvetica Neue-bold",Helvetica,Arial,sans-serif;
   font-size: 25px;
   color: black;
@@ -99,11 +99,11 @@ body{
   font-size: 16px;
 }
 
-
 .sloganName{
   color: white;
   margin-top: 23%;
 }
+
 .btn-eco{
   margin-top: 1%;
   font-size: 26px;
