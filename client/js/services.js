@@ -52,7 +52,7 @@ app.factory('partners', function(){
       url:"https://amplab.cs.berkeley.edu/"
     },
     {
-      image:'http://www.spark.tc/wp-content/themes/bones/library/images/Typesafe.svg',
+      image:'/client/images/lightbend-230-49.png',
       url:"https://www.lightbend.com/company"
     },
     {
