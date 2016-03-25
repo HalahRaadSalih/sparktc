@@ -39,12 +39,22 @@ app.controller('ApplyPartnerController', function($scope, partnerBenefits){
       reader.onload = function(event){
           var img = new Image();
           img.onload = function(){
-              canvas.width = img.width;
-              canvas.height = img.height;
+            var ratio = 1;
+            var height = img.naturalHeight;
+            var width = img.naturalWidth;
+            //Adjust the ratio of the image to fit the canvas
+            if (height > 500 || width > 500) {
+                ratio = 500 / Math.max(height, width);
+            }
+            canvas.width = width * ratio;
+            canvas.height = height * ratio;
+
               ctx.drawImage(img,0,0);
           }
+
           img.src = event.target.result;
       }
+      
       reader.readAsDataURL(e.target.files[0]);
   }
 
