@@ -70,6 +70,10 @@ app.factory('partners', function(){
     {
       image:"/client/images/confluent_logo.png",
       url:"http://www.confluent.io/"
+    },
+    {
+      image:"/client/images/rstudio-logo.png",
+      url:"https://www.rstudio.com/"
     }
   ];
 });
