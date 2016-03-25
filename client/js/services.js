@@ -58,6 +58,14 @@ app.factory('partners', function(){
     {
       image:'http://www.spark.tc/wp-content/themes/bones/library/images/databricks.svg',
       url:"https://databricks.com/"
+    },
+    {
+      image:'/client/images/skymind-logo.png',
+      url:"http://www.skymind.io/"
+    },
+    {
+      image:"/client/images/datafellas-logo.png",
+      url:"http://www.data-fellas.guru/"
     }
   ];
 });
