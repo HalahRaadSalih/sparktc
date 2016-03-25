@@ -44,17 +44,17 @@ app.controller('ApplyPartnerController', function($scope, partnerBenefits){
             var width = img.naturalWidth;
             //Adjust the ratio of the image to fit the canvas
             if (height > 500 || width > 500) {
-                ratio = 500 / Math.max(height, width);
+                ratio = 450 / Math.max(height, width);
             }
             canvas.width = width * ratio;
             canvas.height = height * ratio;
 
-              ctx.drawImage(img,0,0);
+              ctx.drawImage(img,0,0,(width * ratio), (height * ratio));
           }
 
           img.src = event.target.result;
       }
-      
+
       reader.readAsDataURL(e.target.files[0]);
   }
 
