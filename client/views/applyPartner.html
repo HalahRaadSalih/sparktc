@@ -46,6 +46,12 @@
             <textarea class="form-control" type="text" placeholder="Company Description" ng-model="partner.companyDescription"  rows="3"required></textarea>
           </div>
         </div>
+
+        <div class="form-group row" ng-class="">
+          <label for="logo">Upload Logo Image</label>
+          <input type='file' id="logoLoader"/>
+          <canvas id="logoCanvas" width="300" height="300"></canvas>
+        </div>
         <br>
         <br>
         <button class="btn btn-submit" type="submit"  value="Save">Submit</button>
