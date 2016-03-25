@@ -49,8 +49,15 @@
 
         <div class="form-group row" ng-class="">
           <label for="logo">Upload Logo Image</label>
-          <input type='file' id="logoLoader"/>
-          <canvas id="logoCanvas" width="300" height="300"></canvas>
+          <label class="custom-file-upload btn btn-submit" "cursor": pointer>
+            <input type="file" id="logoLoader"/>
+            Choose File
+          </label>
+          <!-- <input class="btn btn-eco" size="60" type='file' id="logoLoader"/> -->
+        </div>
+
+        <div class="">
+          <canvas id="logoCanvas"></canvas>
         </div>
         <br>
         <br>

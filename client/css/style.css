@@ -107,6 +107,8 @@ body{
   background: #f05524;
   color: white;
   font-size: 1.5vw;
+  cursor: pointer;
+
 }
 
 .btn-submit{
@@ -193,6 +195,10 @@ div.car.ng-isolate-scrope{
 }
 
 .canvas{
-  width: 30px%;
-  height: 3px;
+
+}
+
+
+input[type="file"] {
+    display: none;
 }
