@@ -66,6 +66,10 @@ app.factory('partners', function(){
     {
       image:"/client/images/datafellas-logo.png",
       url:"http://www.data-fellas.guru/"
+    },
+    {
+      image:"/client/images/confluent_logo.png",
+      url:"http://www.confluent.io/"
     }
   ];
 });
