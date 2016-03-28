@@ -3,12 +3,24 @@ body{
   color: black;
 }
 
-.container{
+/*.container{
   background: white;
-}
+}*/
 
 #navbar-container{
-  background: #f7f7f7;
+  padding-left: 0px;
+  padding-right: 0px;
+  background: rgba(0, 0, 0, 0.1);
+
+}
+
+.navbar.navbar-default{
+  margin-bottom: 0px !important;
+  background: rgba(255, 255, 255, 0);
+}
+
+.navbar-default{
+  border: 0px !important;
 }
 
 .header{
@@ -18,15 +30,8 @@ body{
 
 #headerID{
   position: relative;
-}
-
-.navbar.navbar-default{
-  margin-bottom: 0px !important;
-}
-
-.navbar-default{
-  border: 0px !important;
-  border-color: white !important;
+  padding-left: 0px;
+  padding-right: 0px;
 }
 
 #logo{
@@ -34,7 +39,14 @@ body{
   padding-top: 35px;
 }
 
-.logo-spark, .about{
+.logo-spark{
+  font-family: "Helvetica Neue-bold",Helvetica,Arial,sans-serif;
+  font-size: 25px;
+  color: white;
+  padding: 15px 0px;
+}
+
+.about{
   font-family: "Helvetica Neue-bold",Helvetica,Arial,sans-serif;
   font-size: 25px;
   color: black;
@@ -51,7 +63,7 @@ body{
 .logo-curlys{
   font-family: "Helvetica Neue-light",Helvetica,Arial,sans-serif;
   font-size: 25px;
-  color: black;
+  color: white;
   font-weight: 100;
 
 }
@@ -62,7 +74,7 @@ body{
 
 .menu-item > a{
   font-family: "Helvetica Neue-bold",Helvetica,Arial,sans-serif;
-  color: black !important;
+  color: white !important;
   font-weight: bold;
   padding: 5px  5px!important;
   height: inherit;
@@ -79,6 +91,7 @@ body{
 .container-info{
   margin-bottom: 5%;
   margin-top: 5%;
+  position: relative;
 
 }
 
@@ -98,7 +111,7 @@ body{
 
 .sloganName{
   color: white;
-  margin-top: 23%;
+  margin-top: 15%;
 }
 
 .btn-eco{
@@ -127,10 +140,20 @@ div.car.ng-isolate-scrope{
 }
 
 #slides_control,.partner-background{
+  position: absolute;
+  left: 0;
+  top: 0;
   height: 500px;
+  width: 100%;
+  z-index: -1;
   background: url('http://www.spark.tc/wp-content/themes/bones/library/images/Redrock-Animation.gif');
   background-size: cover;
 
+}
+
+#intro_banner{
+  z-index: 2;
+  height: 400px;
 }
 
 .about-text{
