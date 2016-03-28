@@ -74,6 +74,38 @@ app.factory('partners', function(){
     {
       image:"/client/images/rstudio-logo.png",
       url:"https://www.rstudio.com/"
+    },
+    {
+      image:"https://ga-core.s3.amazonaws.com/cms/files/files/000/002/625/original/datacamp_v2.jpg",
+      url:"https://www.datacamp.com/"
+    },
+    {
+      image:"https://p4.zdassets.com/hc/settings_assets/558139/200117215/O4fX0WytFgMoaT6qIVasMg-Mesosphere_Logo_-_Horizontal_Lockup__RGB__Jumbo_.png",
+      url:"https://mesosphere.com/"
+    },
+    {
+      image:"https://static-www.wandisco.com/assets/blt7023e9c8337552e2/logo.png?q=1456997308453%22",
+      url:"http://www.wandisco.com/home"
+    },
+    {
+      image:"http://uploads.webflow.com/54d006aa2cb8e4a17a02e212/5522ca29dcc6adcc03851661_SVDS_logo_color_Aug_16_2013.png",
+      url:"http://www.svds.com/"
+    },
+    {
+      image:"/client/images/datarobot-logo.png",
+      url:"https://www.datarobot.com/"
+    },
+    {
+      image:"/client/images/unifi-logo.png",
+      url:"http://unifisoftware.com/"
+    },
+    {
+      image:"https://dato.com/images/dato_logo.svg",
+      url:"https://dato.com/"
+    },
+    {
+      image:"/client/images/h2o-logo.png",
+      url:"http://www.h2o.ai/"
     }
   ];
 });
