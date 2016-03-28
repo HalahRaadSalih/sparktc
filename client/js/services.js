@@ -214,7 +214,7 @@ app.factory('partnerTypes', function(){
   },
   {
     title:"Application Maker",
-    image:"http://www.spark.tc/wp-content/themes/bones/library/images/hiring-hero.png",
+    image:"https://app.box.com/representation/file_version_61376745465/image_2048_jpg/1.jpg",
     description:'Application Makers who wish to build applications for the business with Apache Spark don\'t have to worry about compatibility, system integrations, data source connections, and decipher complex pricing to know how to make money from their application. Application makers seek direct feedback from early adopters of an Open Analytics Ecosystem.',
     headTitles:['Application Maker', 'Acquaintance', 'Friend', 'BFF'],
     benefits:[
