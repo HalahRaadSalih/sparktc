@@ -139,7 +139,7 @@ div.car.ng-isolate-scrope{
   margin-top: 0px !important;
 }
 
-#slides_control,.partner-background{
+#slides_control, #partner-control{
   position: absolute;
   left: 0;
   top: 0;
@@ -151,7 +151,7 @@ div.car.ng-isolate-scrope{
 
 }
 
-#intro_banner{
+#intro_banner, #partner-banner{
   z-index: 2;
   height: 400px;
 }

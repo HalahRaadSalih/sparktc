@@ -1,100 +1,95 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title>Become A Partner</title>
-  </head>
-  <body>
-    <div class="container-fluid">
-      <div class="row partner-background">
-        <div class="col-md-12 text-center">
-          <h1 class="text-center sloganName">Partner With Open Analytics Ecosystem</h1>
-          <a  class="btn btn-eco text-center" href="/#/partner/apply">Apply Now</a>
-        </div>
+
+<div class="container-fluid" id="partner-control">
+</div>
+
+<div class="container-fluid" id="partner-banner">
+  <div class="row partner-background">
+    <div class="col-md-12 text-center">
+      <h1 class="text-center sloganName">Partner With Open Analytics Ecosystem</h1>
+      <a  class="btn btn-eco text-center" href="/#/partner/apply">Apply Now</a>
+    </div>
+  </div>
+</div>
+<div class="container container-info">
+  <div class="row">
+    <div class="col-md-12 col-md-offset">
+      <div class="text-center">
+        <h3 class="text-center">
+          <span class="about">{</span>
+          <span class="about">Partner Status</span>
+          <span class="about">}</span>
+        </h3>
       </div>
     </div>
-    <div class="container container-info">
-      <div class="row">
-        <div class="col-md-12 col-md-offset">
-          <div class="text-center">
-            <h3 class="text-center">
-              <span class="logo-curlys">{</span>
-              <span class="logo-spark">Partner Status</span>
-              <span class="logo-curlys">}</span>
-            </h3>
-          </div>
-        </div>
+  </div>
+</div>
+<div class="container container-info">
+  <div class="row text-center">
+    <div class="col-md-12">
+      <div class="partner-status">
+        <span class="fa-stack fa-8x icons lg">
+            <i class="fa fa-circle fa-stack-2x acquaintance-color"></i>
+            <i class="fa fa-book fa-stack-1x fa-inverse "></i>
+        </span>
+        <h3>Acquaintance</h3>
+      </div>
+      <div class="partner-status">
+        <span class="fa-stack fa-8x icons lg">
+            <i class="fa fa-circle fa-stack-2x friend-color"></i>
+            <i class="fa fa-book fa-stack-1x fa-inverse"></i>
+        </span>
+        <h3 >Friend</h3>
+      </div>
+      <div class="partner-status">
+        <span class="fa-stack fa-8x icons lg">
+            <i class="fa fa-circle fa-stack-2x bff-color"></i>
+            <i class="fa fa-book fa-stack-1x fa-inverse"></i>
+        </span>
+        <h3>BFF</h3>
       </div>
     </div>
-    <div class="container container-info">
-      <div class="row text-center">
-        <div class="col-md-12">
-          <div class="partner-status">
-            <span class="fa-stack fa-8x icons lg">
-                <i class="fa fa-circle fa-stack-2x acquaintance-color"></i>
-                <i class="fa fa-book fa-stack-1x fa-inverse "></i>
-            </span>
-            <h3>Acquaintance</h3>
-          </div>
-          <div class="partner-status">
-            <span class="fa-stack fa-8x icons lg">
-                <i class="fa fa-circle fa-stack-2x friend-color"></i>
-                <i class="fa fa-book fa-stack-1x fa-inverse"></i>
-            </span>
-            <h3 >Friend</h3>
-          </div>
-          <div class="partner-status">
-            <span class="fa-stack fa-8x icons lg">
-                <i class="fa fa-circle fa-stack-2x bff-color"></i>
-                <i class="fa fa-book fa-stack-1x fa-inverse"></i>
-            </span>
-            <h3>BFF</h3>
-          </div>
-        </div>
+  </div>
+</div>
+<div class="container">
+  <div class="row row-type">
+    <div class="col-md-12 col-md-offset">
+      <div class="text-center">
+        <br>
+        <br>
+        <p p-description>
+          Cost of entry is not monetary. Instead, it is the contributions to provide at a minimum one of the following to achieve partner status:
+        </p>
       </div>
     </div>
-    <div class="container">
-      <div class="row row-type">
-        <div class="col-md-12 col-md-offset">
-          <div class="text-center">
-            <br>
-            <br>
-            <p p-description>
-              Cost of entry is not monetary. Instead, it is the contributions to provide at a minimum one of the following to achieve partner status:
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="container img-rounded"  ng-repeat="type in benefits">
-       <div class="row row-type">
-         <div class="col-md-12">
-           <div class="table-responsive">
-             <table class="table table-hover">
-               <thead class="thead-inverse">
-                 <tr>
-                   <th ng-repeat="head in type.headTitles">
-                     {{head}}
-                   </th>
-                 </tr>
-               </thead>
-               <tbody>
-                 <tr ng-repeat="benefit in type.benefits">
-                   <td class="p-table"> <p >{{benefit.title}}</p></td>
-                   <td> <p class="p-table">{{benefit.amount}}</p></td>
-                   <td ng-class="benefit.Status === 'Acquaintance' ? 'acquaintance-color' : (benefit.Status === 'Friend' ? 'friend-color' : 'bff-color')">{{benefit.Status}}</td>
-                 </tr>
-               </tbody>
-             </table>
-           </div>
-         </div>
+  </div>
+</div>
+<div class="container img-rounded"  ng-repeat="type in benefits">
+   <div class="row row-type">
+     <div class="col-md-12">
+       <div class="table-responsive">
+         <table class="table table-hover">
+           <thead class="thead-inverse">
+             <tr>
+               <th ng-repeat="head in type.headTitles">
+                 {{head}}
+               </th>
+             </tr>
+           </thead>
+           <tbody>
+             <tr ng-repeat="benefit in type.benefits">
+               <td class="p-table"> <p >{{benefit.title}}</p></td>
+               <td> <p class="p-table">{{benefit.amount}}</p></td>
+               <td ng-class="benefit.Status === 'Acquaintance' ? 'acquaintance-color' : (benefit.Status === 'Friend' ? 'friend-color' : 'bff-color')">{{benefit.Status}}</td>
+             </tr>
+           </tbody>
+         </table>
        </div>
-    </div>
-    <div class="container container-info">
-      <div class="row text-center">
-        <h4>Ready to be part of IBM Open Analytics Ecosystem Community?</h4>
-        <a  class="btn btn-eco text-center" href="/#/partner/apply">Apply Now</a>
-      </div>
-    </div>
-  </body>
-</html>
+     </div>
+   </div>
+</div>
+<div class="container container-info">
+  <div class="row text-center">
+    <h4>Ready to be part of IBM Open Analytics Ecosystem Community?</h4>
+    <a  class="btn btn-eco text-center" href="/#/partner/apply">Apply Now</a>
+  </div>
+</div>
