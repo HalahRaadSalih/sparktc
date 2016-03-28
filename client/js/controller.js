@@ -63,7 +63,7 @@ $scope.submit = function(partner){
       var req = {
        method: 'POST',
        url: '/api/email',
-       
+
        data: partner
       }
 
