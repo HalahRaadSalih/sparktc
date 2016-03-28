@@ -182,7 +182,7 @@ app.factory('partnerTypes', function(){
     },
     {
       title:"Development Expert",
-      image:"http://www.spark.tc/wp-content/themes/bones/library/images/datapalooza-hero.jpg",
+      image:"https://app.box.com/representation/file_version_61377466797/image_2048_jpg/1.jpg",
       description:'Development experts use Open Analytics Ecosystem Community to share new innovations and receive feedback from their peers on whether an additional piece of technology is necessary and vet the technology for market adoption.',
       headTitles:['Development Expert', 'Acquaintance', 'Friend', 'BFF'],
       benefits:[
