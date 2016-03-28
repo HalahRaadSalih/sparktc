@@ -26,7 +26,7 @@ app.controller('PartnerController', function($scope, partnerBenefits){
   $scope.benefits = partnerBenefits;
 });
 
-app.controller('ApplyPartnerController', function($scope, partnerBenefits){
+app.controller('ApplyPartnerController', function($scope, partnerBenefits, $http){
   $scope.benefits = partnerBenefits;
   var imageLoader = document.getElementById('logoLoader');
       imageLoader.addEventListener('change', handleImage, false);
@@ -60,6 +60,17 @@ app.controller('ApplyPartnerController', function($scope, partnerBenefits){
 
 $scope.submit = function(partner){
       console.log(partner);
+      var req = {
+       method: 'POST',
+       url: '/api/email',
+       headers: {
+         'Content-Type': 'json'
+       },
+       data: partner
+      }
 
+    $http(req).then(function(){
+      console.log('over');
+    });
     }
 });
