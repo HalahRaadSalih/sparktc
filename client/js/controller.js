@@ -63,9 +63,7 @@ $scope.submit = function(partner){
       var req = {
        method: 'POST',
        url: '/api/email',
-       headers: {
-         'Content-Type': 'json'
-       },
+       
        data: partner
       }
 
