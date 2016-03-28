@@ -24,6 +24,7 @@ app.controller('HomeController', function($scope, $location, anchorSmoothScroll,
 
   $scope.content = {};
   $scope.content.about = aboutContent;
+  $scope.content.title = "IBM & Apache Spark Solve The Challenge Our Partners Face To Create Real Business Value With Apache Spark";
 });
 
 app.controller('PartnerController', function($scope, partnerBenefits){
