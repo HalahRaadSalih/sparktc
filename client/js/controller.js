@@ -13,6 +13,10 @@ app.controller('NavBarController', function($scope, $location, anchorSmoothScrol
   };
 });
 
+app.controller('FooterController', function($scope){
+  $scope.index = {};
+  $scope.index.footer = "Apache®, Apache Spark™, and Spark™ are trademarks of the Apache Software Foundation in the United States and/or other countries.";
+});
 app.controller('HomeController', function($scope, $location, anchorSmoothScroll, resources, partners, partnerTypes, $timeout,aboutContent){
   $scope.resources = resources;
   $scope.partners = partners;
