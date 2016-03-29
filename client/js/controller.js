@@ -22,9 +22,9 @@ app.controller('HomeController', function($scope, $location, anchorSmoothScroll,
   $scope.partners = partners;
   $scope.partnerTypes = partnerTypes;
 
-  $scope.content = {};
-  $scope.content.about = aboutContent;
-  $scope.content.title = "IBM & Apache Spark Solve The Challenge Our Partners Face To Create Real Business Value With Apache Spark";
+  $scope.content = aboutContent;
+  $scope.content.about = aboutContent.description;
+  $scope.content.title = aboutContent.title;
 });
 
 app.controller('PartnerController', function($scope, partnerBenefits){

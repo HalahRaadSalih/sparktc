@@ -111,7 +111,11 @@ app.factory('partners', function(){
 });
 
 app.factory('aboutContent', function(){
-  return "Open Analytics Ecosystem program offers a first of its kind open partnership program to build relationships with in the open analytics community directly with the business leaders, applications makers, and technology experts to decrease the time it takes for them to achieve success. Starting at Strata Hadoop World San Jose, we'll launch a pilot program to test the assumptions above by accepting applications to join, interviewing prospective partners, and advertising on social media from the core Open Analytics Ecosystem audience. Following Strata Hadoop World San Jose, we'll update the program with the lessons learned, onboard partners, and invite them to the first ever Open Analytics Ecosystem Reunion during Spark Summit San Francisco.";
+  return {
+    title: "What Are We About",
+    description: "Open Analytics Ecosystem program offers a first of its kind open partnership program to build relationships with in the open analytics community directly with the business leaders, applications makers, and technology experts to decrease the time it takes for them to achieve success. Starting at Strata Hadoop World San Jose, we'll launch a pilot program to test the assumptions above by accepting applications to join, interviewing prospective partners, and advertising on social media from the core Open Analytics Ecosystem audience. Following Strata Hadoop World San Jose, we'll update the program with the lessons learned, onboard partners, and invite them to the first ever Open Analytics Ecosystem Reunion during Spark Summit San Francisco.",
+    partnerTypes: "Who We Are"
+  }
 });
 
 app.service('anchorSmoothScroll', function(){
