@@ -56,8 +56,8 @@ app.factory('partners', function(){
       url:"https://www.lightbend.com/company"
     },
     {
-      image:'http://www.spark.tc/wp-content/themes/bones/library/images/databricks.svg',
-      url:"https://databricks.com/"
+      image:'http://www.galvanize.com/wp-content/themes/galvanize/img/galvanize-logo.svg',
+      url:"https://galvanize.com/"
     },
     {
       image:'/client/images/skymind-logo.png',
