@@ -177,7 +177,7 @@ app.factory('partnerTypes', function(){
   return [
     {
       title:"Business Leader",
-      image:"https://app.box.com/representation/file_version_61377488125/image_2048_jpg/1.jpg",
+      image:"https://app.box.com/representation/file_version_61489640189/image_2048_jpg/1.jpg",
       description:'Business leaders identify innovative ways to transform their business model with data. There is a growing community around Apache Spark who\'s members are interested in driving Open Analytics Ecosystem adoption in their business.',
       headTitles:['Business Leader', 'Acquaintance', 'Friend', 'BFF'],
       benefits:[
@@ -250,7 +250,7 @@ app.factory('partnerTypes', function(){
   },
   {
     title:"Application Maker",
-    image:"https://app.box.com/representation/file_version_61376745465/image_2048_jpg/1.jpg",
+    image:"https://app.box.com/representation/file_version_61489558581/image_2048_jpg/1.jpg",
     description:'Application Makers who wish to build applications for the business with Apache Spark don\'t have to worry about compatibility, system integrations, data source connections, and decipher complex pricing to know how to make money from their application. Application makers seek direct feedback from early adopters of an Open Analytics Ecosystem.',
     headTitles:['Application Maker', 'Acquaintance', 'Friend', 'BFF'],
     benefits:[
