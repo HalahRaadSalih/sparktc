@@ -11,7 +11,7 @@ app.config(function($routeProvider, $locationProvider, $httpProvider){
     controller:'PartnerController'
   })
   .when('/partner/apply',{
-    templateUrl:'/client/views/applyPartner.html',
+    templateUrl:'/client/views/tempApplyToPartner.html',
     controller:'ApplyPartnerController'
   })
   .otherwise({
