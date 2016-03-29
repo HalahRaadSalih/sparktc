@@ -3,7 +3,7 @@ var router = express.Router();
 var nodemailer = require('nodemailer');
 var mailchimp = require('mailchimp').MailChimpAPI;
 var apiKey = process.env.MAILCHIMP_API_KEY;
-var sendgrid = require("sendgrid")("SENDGRID_APIKEY");
+var sendgrid = require("sendgrid")(process.env.sendgrid_api_key);
 
 
 // index
