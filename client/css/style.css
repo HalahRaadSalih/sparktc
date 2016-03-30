@@ -231,11 +231,6 @@ input[type="file"] {
   border-radius: 50%
 }
 
-.acquaintance > img, .friend > img, .bff > img{
-  margin: 0 auto;
-  padding: 40px 25px;
-  color: white;
-}
 .friend{
   width: 200px;
   height: 200px;
@@ -250,4 +245,15 @@ input[type="file"] {
   background: #348E9C;
   margin: 0 auto;
   border-radius: 50%
+}
+
+.friend > svg, .bff > svg {
+  margin-top: 40px;
+  fill: white;
+
+}
+
+.acquaintance > svg{
+  margin-top: 35px;
+  fill: white;
 }
