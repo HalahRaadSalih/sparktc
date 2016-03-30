@@ -207,6 +207,7 @@ div.car.ng-isolate-scrope{
       width: 33%;
       height:33%;
       float: left;
+      padding: 25px;
       }
 }
 
@@ -220,4 +221,33 @@ div.car.ng-isolate-scrope{
 
 input[type="file"] {
     display: none;
+}
+
+.acquaintance{
+  width: 200px;
+  height: 200px;
+  background: #93AF43;
+  margin: 0 auto;
+  border-radius: 50%
+}
+
+.acquaintance > img, .friend > img, .bff > img{
+  margin: 0 auto;
+  padding: 40px 25px;
+  color: white;
+}
+.friend{
+  width: 200px;
+  height: 200px;
+  background: #F0AA1E;
+  margin: 0 auto;
+  border-radius: 50%
+}
+
+.bff{
+  width: 200px;
+  height: 200px;
+  background: #348E9C;
+  margin: 0 auto;
+  border-radius: 50%
 }
