@@ -85,7 +85,7 @@ body{
 .menu-item>a:hover{
 }
 
-.container-info{
+.container-info, #container-info{
   margin-bottom: 5%;
   margin-top: 5%;
   position: relative;
