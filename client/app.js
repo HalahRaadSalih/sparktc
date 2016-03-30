@@ -14,6 +14,10 @@ app.config(function($routeProvider, $locationProvider, $httpProvider){
     templateUrl:'/client/views/tempApplyToPartner.html',
     controller:'ApplyPartnerController'
   })
+  .when('/contact',{
+    templateUrl:'client/views/contact.html',
+    controller:'ContactController'
+  })
   .otherwise({
     redirectTo: '/'
   });

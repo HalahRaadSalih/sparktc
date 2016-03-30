@@ -177,7 +177,7 @@ app.factory('partnerTypes', function(){
   return [
     {
       title:"Business Leader",
-      image:"/client/images/business_leaders.jpeg",
+      image:"/client/images/P5267270.jpg",
       description:'Business leaders identify innovative ways to transform their business model with data. There is a growing community around Apache Spark who\'s members are interested in driving Open Analytics Ecosystem adoption in their business.',
       headTitles:['Business Leader', 'Acquaintance', 'Friend', 'BFF'],
       benefits:[
