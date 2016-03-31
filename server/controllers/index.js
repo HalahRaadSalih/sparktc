@@ -2,24 +2,43 @@ var express = require('express');
 var router = express.Router();
 var cloudinary = require('cloudinary');
 var partners = require('../models/partners');
-
-cloudinary.config({
-  cloud_name: process.env.CLOUDINARY_CLOUD_NAME,
-  api_key: process.env.CLOUDINARY_API_KEY,
-  api_secret: process.env.CLOUDINARY_API_SECRET
-});
+var ibmdb = require('ibm_db');
 
 // index
 router.get('/', function(req, res) {
 });
 
 router.post('/email', function(req, res){
+  var db2;
 
-  console.log(req.body);
-  partners.addPartner(req.body).then(function(partner){
-    console.log('partner added');
+  if (process.env.VCAP_SERVICES) {
+      var env = JSON.parse(process.env.VCAP_SERVICES);
+      db2 = env['sqldb'][1].credentials;
+  }
+  else {
+
+  }
+
+  var connString = "DRIVER={DB2};DATABASE=" + db2.db + ";UID=" + db2.username + ";PWD=" + db2.password + ";HOSTNAME=" + db2.hostname + ";port=" + db2.port;
+  ibmdb.open(connString, function(error, conn){
+    if (error){
+			 res.send("error occurred " + err.message);
+			}
+      else{
+          conn.query('INSERT INTO (ADDRESS,COMPANYDESCRIPTION,COMAPANYLOGO,COMPANYNAME,COMPANYNUMBER,COMPANYPOINTS,COMPANYSTATUS,COMPANYSTATUS,COMPANYURL,EMAIL,NAME) VALUES('2016 BLAKE ST',''YOYO','YO','H','123',1,'HELL','YO','HALAH@GMAIL.COM','HALA')'\;', function(err, tables, moreResultSets){
+            if ( !err ) {
+              res.send("successful");
+            }
+            else {
+              res.send("error occurred " + err.message);
+            }
+            conn.close(function(){
+              console.log("Connection Closed");
+              });
+            });
+          });
+      }
   });
-
 });
 
 module.exports = router;

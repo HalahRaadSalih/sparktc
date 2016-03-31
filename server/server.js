@@ -25,6 +25,7 @@ app.get('/', function(req,res){
   res.sendFile(path.join(__dirname,'../client/views', 'index.html'));
 });
 
+
 //set a port to listen to
 var port = process.env.PORT || 3000;
 
