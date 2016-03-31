@@ -25,18 +25,9 @@ router.post('/email', function(req, res){
 			 res.send("error occurred " + err.message);
 			}
       else{
-          conn.query('INSERT INTO (ADDRESS,COMPANYDESCRIPTION,COMAPANYLOGO,COMPANYNAME,COMPANYNUMBER,COMPANYPOINTS,COMPANYSTATUS,COMPANYSTATUS,COMPANYURL,EMAIL,NAME) VALUES('2016 BLAKE ST',''YOYO','YO','H','123',1,'HELL','YO','HALAH@GMAIL.COM','HALA')'\;', function(err, tables, moreResultSets){
-            if ( !err ) {
-              res.send("successful");
-            }
-            else {
-              res.send("error occurred " + err.message);
-            }
-            conn.close(function(){
-              console.log("Connection Closed");
-              });
+          conn.query('INSERT INTO MYTABLE (ADDRESS,COMPANYDESCRIPTION,COMAPANYLOGO,COMPANYNAME,COMPANYNUMBER,COMPANYPOINTS,COMPANYSTATUS,COMPANYSTATUS,COMPANYURL,EMAIL,NAME) VALUES(\'2016 BLAKE ST\',\'YOYO\',\'YO\',\'H\',\'123'+',1,'+'\'HELL\',\'YO\',\'HALAH@GMAIL.COM\',\'HALA\')\;', function(err, tables, moreResultSets){
+
             });
-          });
       }
   });
 });
