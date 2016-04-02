@@ -18,6 +18,10 @@ app.config(function($routeProvider, $locationProvider, $httpProvider){
     templateUrl:'client/views/contact.html',
     controller:'ContactController'
   })
+  .when('/success',{
+    templateUrl:'/client/views/success.html',
+    controller:'SuccessController'
+  })
   .otherwise({
     redirectTo: '/'
   });

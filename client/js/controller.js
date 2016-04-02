@@ -51,5 +51,9 @@ $scope.submit = function(partner){
 });
 
 app.controller('ContactController', function(){
-  
+
+});
+
+app.controller('SuccessController', function(){
+
 });
