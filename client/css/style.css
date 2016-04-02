@@ -257,3 +257,9 @@ input[type="file"] {
   margin-top: 35px;
   fill: white;
 }
+
+.form-group.required label:after, .info-label
+ {
+  content:"*";
+  color:red;
+}
