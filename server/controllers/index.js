@@ -11,7 +11,7 @@ router.get('/', function(req, res) {
 router.post('/email', function(req, res){
   var db2;
   var connString;
-
+  var partner = req.body;
   if (process.env.VCAP_SERVICES) {
       var env = JSON.parse(process.env.VCAP_SERVICES);
       db2 = env['sqldb'][1].credentials;
@@ -27,7 +27,14 @@ router.post('/email', function(req, res){
 			 res.send("error occurred " + error.message);
 			}
       else{
-          conn.query('INSERT INTO MYTABLE (ADDRESS,COMPANYDESCRIPTION,COMAPANYLOGO,COMPANYNAME,COMPANYNUMBER,COMPANYPOINTS,COMPANYSTATUS,COMPANYSTATUS,COMPANYURL,EMAIL,NAME) VALUES(\'2016 BLAKE ST\',\'YOYO\',\'YO\',\'H\',\'123'+',1,'+'\'HELL\',\'YO\',\'HALAH@GMAIL.COM\',\'HALA\')\;', function(err, tables, moreResultSets){
+          conn.query('INSERT INTO MYTABLE (ADDRESS,COMPANYDESCRIPTION,COMPANYLOGO,COMPANYNAME,COMPANYNUMBER,COMPANYPOINTS,COMPANYSTATUS,COMPANYURL,EMAIL,NAME) VALUES(\''+partner.address+'\',\''+partner.companyDescription+'\',\''+partner.companyLogo+'\',\''+partner.companyName+'\',\''+partner.companyNumber+'\','+partner.companyPoints+',\'None\',\''+partner.companyURL+'\',\''+partner.email+'\',\''+partner.name+'\')\;', function(err, tables, moreResultSets){
+            if(err){
+              res.send(err.message);
+            }
+            else{
+              res.send('added item successfully');
+            }
+
             conn.close(function(){
 					         res.send('success yo!');
 					      });
