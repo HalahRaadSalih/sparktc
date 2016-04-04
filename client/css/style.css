@@ -160,12 +160,17 @@ div.car.ng-isolate-scrope{
 @media (min-width: 320px) {
     .partners-logo {
       width: 21%;
-      /*height: 65px;*/
       margin-left: 10px;
       margin-right: 10px;
       margin-top: 10px;
       margin-bottom: 20px;
+      transition: width 2s;
+      transition: height 2s;
       }
+}
+.partners-logo:hover{
+  width: 22%;
+  background: white;
 }
 
 .pull-left{
