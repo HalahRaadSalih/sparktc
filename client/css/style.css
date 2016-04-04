@@ -202,7 +202,24 @@ div.car.ng-isolate-scrope{
 .bff-color{
   color: #348E9C;
 }
+.twitter-color, .twitter{
+  color: black;
+}
+.contact > a{
+  color: black;
+  text-decoration: none;
+}
+.contact:nth-child(1):hover{
+  color: #f05524;
+}
 
+.contact:nth-child(2):hover{
+  color: #319BC2;
+
+}
+.contact-info{
+  width: 50%;
+}
 .fa-8x{
   font-size: 8em;
 }
