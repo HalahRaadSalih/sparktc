@@ -1,21 +1,5 @@
 var app = angular.module('sparktc');
 
-app.factory('carsoulSlides', function(){
-  return [
-
-    {
-      image: 'http://www.spark.tc/wp-content/themes/bones/library/images/datapalooza-hero.jpg'
-    },
-    {
-      image: 'http://www.spark.tc/wp-content/themes/bones/library/images/Redrock-Animation.gif'
-    },
-    {
-      image: 'http://www.spark.tc/wp-content/themes/bones/library/images/hiring-hero.png'
-    }
-
-  ];
-});
-
 app.factory('resources', function(){
   return [
     {
@@ -41,6 +25,8 @@ app.factory('resources', function(){
 
   ];
 });
+
+// service for partners information : logo and link
 app.factory('partners', function(){
   return [
     {
@@ -110,6 +96,7 @@ app.factory('partners', function(){
   ];
 });
 
+// service for about information
 app.factory('aboutContent', function(){
   return {
     title: "What We Are About",
@@ -118,6 +105,7 @@ app.factory('aboutContent', function(){
   }
 });
 
+// service for scroll to about section
 app.service('anchorSmoothScroll', function(){
 
     this.scrollTo = function(eID) {
@@ -172,6 +160,7 @@ app.service('anchorSmoothScroll', function(){
 
 });
 
+// service for partners types information
 app.factory('partnerTypes', function(){
 
   return [
@@ -290,6 +279,7 @@ app.factory('partnerTypes', function(){
   }];
 });
 
+// service for partners benefits
 app.factory('partnerBenefits',function(){
   return [
     {
