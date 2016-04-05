@@ -251,15 +251,20 @@ input[type="file"] {
   height: 200px;
   background: #93AF43;
   margin: 0 auto;
-  border-radius: 50%
+  border-radius: 50%;
+  opacity: 0.9;
 }
-
+.acquaintance:hover, .friend:hover, .bff:hover{
+  opacity: 1;
+}
 .friend{
   width: 200px;
   height: 200px;
   background: #F0AA1E;
   margin: 0 auto;
-  border-radius: 50%
+  border-radius: 50%;
+  opacity: 0.9;
+
 }
 
 .bff{
@@ -267,7 +272,8 @@ input[type="file"] {
   height: 200px;
   background: #348E9C;
   margin: 0 auto;
-  border-radius: 50%
+  border-radius: 50%;
+  opacity: 0.9;
 }
 
 .friend > svg, .bff > svg {
