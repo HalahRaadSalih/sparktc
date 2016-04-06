@@ -92,6 +92,10 @@ app.factory('partners', function(){
     {
       image:"/client/images/h2o-logo.png",
       url:"http://www.h2o.ai/"
+    },
+    {
+      image:"/client/images/DataKind_logo.png",
+      url:""
     }
   ];
 });
