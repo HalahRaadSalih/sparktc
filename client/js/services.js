@@ -95,7 +95,7 @@ app.factory('partners', function(){
     },
     {
       image:"/client/images/DataKind_logo.png",
-      url:""
+      url:"http://www.datakind.org/"
     }
   ];
 });

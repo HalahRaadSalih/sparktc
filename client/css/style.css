@@ -93,8 +93,8 @@ body{
 }
 
 .container-types{
-  margin-bottom: 1%;
-  margin-top: 1%;
+  padding-left: 10%;
+  padding-right: 10%;
 }
 
 .row-type{
@@ -172,7 +172,6 @@ div.car.ng-isolate-scrope{
   width: 22%;
   background: white;
 }
-
 .pull-left{
    float: left !important;
 
@@ -181,7 +180,9 @@ div.car.ng-isolate-scrope{
 .pull-right{
   float: right !important;
 }
-
+.even-color{
+  background:  #f7f7f7;
+}
 .footer{
   height: 10%;
   background: #f7f7f7;

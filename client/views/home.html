@@ -54,11 +54,11 @@
     </div>
   </div>
 </div>
-<div class="container img-rounded container-types" id="about" ng-repeat="type in partnerTypes">
+<div class="container-fluid img-rounded container-types" id="about" ng-repeat="type in partnerTypes" ng-class-even="'even-color'">
   <div class="row row-type">
     <div class="col-md-12">
       <div class="col-md-6" ng-class-even="'pull-right'" ng-class-odd="'pull-left'">
-        <img class="img-responsive img-rounded" ng-src="{{type.image}}" alt="" />
+        <img class="img-responsive img-rounded more" ng-src="{{type.image}}" alt="" />
       </div>
       <div class="col-md-6">
         <h3>{{type.title}}</h3>
