@@ -31,7 +31,6 @@ router.post('/email', function(req, res){
      }
   }
 
-  console.log("credentials : ", credentials);
   var sendgrid  = require('sendgrid')(credentials.username, credentials.password);
   var email = new sendgrid.Email();
 
@@ -47,7 +46,6 @@ router.post('/email', function(req, res){
               res.send(err.message);
             }
             else{
-              res.send('added item successfully');
               sendgrid.send({
                 to:       process.env.to_email,
                 from:     process.env.from_email,
@@ -57,13 +55,15 @@ router.post('/email', function(req, res){
                   if (err) {
                     return console.error(err);
                   }
-                  
+
                   console.log(json);
+                  res.send('added item successfully');
+
              });
+
             }
 
             conn.close(function(){
-					         console.log('success yo!');
 					      });
             });
       }
