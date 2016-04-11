@@ -91,7 +91,10 @@ body{
   position: relative;
   top: 100px;
 }
-
+.apply-form{
+  position: relative;
+  top: 100px;
+}
 .container-types{
   padding-left: 10%;
   padding-right: 10%;
@@ -186,6 +189,7 @@ div.car.ng-isolate-scrope{
 .footer{
   height: 10%;
   background: #f7f7f7;
+  margin-top: 150px;
 }
 
 .footer > div> div>p{
