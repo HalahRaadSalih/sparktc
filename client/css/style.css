@@ -13,7 +13,7 @@ body{
 
 .navbar.navbar-default{
   margin-bottom: 0px !important;
-  background: rgba(255, 255, 255, 0);
+  background: rgba(0, 0, 0, 0.2);
 }
 
 .navbar-default{
@@ -85,9 +85,9 @@ body{
 .menu-item>a:hover{
 }
 
-.container-info, #container-info{
+.container-info, #container-info, .contact-info{
   margin-bottom: 5%;
-  margin-top: 5%;
+  margin-top: 15%;
   position: relative;
 
 }
@@ -108,7 +108,7 @@ body{
 
 .sloganName{
   color: white;
-  margin-top: 15%;
+  margin-top: 20%;
 }
 
 .btn-eco{
