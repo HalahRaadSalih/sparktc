@@ -4,7 +4,7 @@ var cloudinary = require('cloudinary');
 var partners = require('../models/partners');
 var ibmdb = require('ibm_db');
 var request = require('request');
-// var sendgrid = require('sendgrid')(process.env.SpartTCEmailComformation);
+
 // index
 router.get('/', function(req, res) {
 });
@@ -47,10 +47,10 @@ router.post('/email', function(req, res){
             }
             else{
               sendgrid.send({
-                to:       process.env.to_email,
-                from:     process.env.from_email,
-                subject:  'Hello World',
-                text:     'My first email through SendGrid.'
+                to:       partner.email,
+                from:     process.env.community_email,
+                subject:  'Spark.TC Community',
+                text:     'Thank you for joining the Spark.TC Community. \\n You are making the first step to change how people work with data through open analytics.\\n Our team is getting to know each community member.\\n Please be patient as we make new friendships. \\n \\n{spark.tc}'
                 }, function(err, json) {
                   if (err) {
                     return console.error(err);
