@@ -15,7 +15,7 @@ router.post('/email', function(req, res){
   // check for env variables
   if (process.env.VCAP_SERVICES) {
       var env = JSON.parse(process.env.VCAP_SERVICES);
-      db2 = env['sqldb'][1].credentials;
+      db2 = env['user-provided'][0].credentials;
       connString = "DRIVER={DB2};DATABASE=" + db2.db + ";UID=" + db2.username + ";PWD=" + db2.password + ";HOSTNAME=" + db2.hostname + ";port=" + db2.port;
       credentials = env['sendgrid'][0].credentials;
 
