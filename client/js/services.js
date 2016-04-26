@@ -381,3 +381,8 @@ app.factory('partnerBenefits',function(){
 
   ];
 });
+
+//service for error handling
+app.factory('error', function(){
+  return {};
+});

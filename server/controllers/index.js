@@ -5,16 +5,14 @@ var partners = require('../models/partners');
 var ibmdb = require('ibm_db');
 var request = require('request');
 
-// index
-router.get('/', function(req, res) {
-});
-
 router.post('/email', function(req, res){
   var db2;
   var connString;
   var credentials;
-  var partner = req.body;
 
+  // get partner from req body
+  var partner = req.body;
+  // check for env variables
   if (process.env.VCAP_SERVICES) {
       var env = JSON.parse(process.env.VCAP_SERVICES);
       db2 = env['sqldb'][1].credentials;
@@ -26,26 +24,28 @@ router.post('/email', function(req, res){
     connString = process.env.DATABASE_URL;
     credentials = {
          "hostname": "smtp.sendgrid.net",
-         "username" : "user1",
-         "password" : "secret"
+         "username" : process.env.username,
+         "password" : process.env.password
      }
   }
 
+  // get sendgrid
   var sendgrid  = require('sendgrid')(credentials.username, credentials.password);
+  // create new email instance
   var email = new sendgrid.Email();
-
-
-
+  // open connection with ibmdb
   ibmdb.open(connString, function(error, conn){
     if (error){
-			 res.send("error occurred " + error.message);
+      res.status(500).send("Can not connect to the IMB database locally");
 			}
       else{
+          //make SQL query
           conn.query('INSERT INTO MYTABLE (ADDRESS,COMPANYDESCRIPTION,COMPANYLOGO,COMPANYNAME,COMPANYNUMBER,COMPANYPOINTS,COMPANYSTATUS,COMPANYURL,EMAIL,NAME) VALUES(\''+partner.address+'\',\''+partner.companyDescription+'\',\''+partner.companyLogo+'\',\''+partner.companyName+'\',\''+partner.phoneNumber+'\','+1+',\'None\',\''+partner.comapanyURL+'\',\''+partner.email+'\',\''+partner.name+'\')\;', function(err, tables, moreResultSets){
             if(err){
-              res.send(err.message);
+              res.status(500).send("Error Database Insertion Failure");
             }
             else{
+              // send email
               sendgrid.send({
                 to:       partner.email,
                 from:     process.env.community_email,
@@ -53,16 +53,15 @@ router.post('/email', function(req, res){
                 text:     'Thank you for joining the Spark.TC Community. \\n You are making the first step to change how people work with data through open analytics.\\n Our team is getting to know each community member.\\n Please be patient as we make new friendships. \\n \\n{spark.tc}'
                 }, function(err, json) {
                   if (err) {
-                    return console.error(err);
+                    res.status(500).send("Sendgrid Error");
                   }
-
-                  console.log(json);
-                  res.send('added item successfully');
-
+                  else {
+                    res.status(200).send('');
+                  }
              });
 
             }
-
+            //close connection with ibmdb
             conn.close(function(){
 					      });
             });

@@ -22,7 +22,11 @@ app.config(function($routeProvider, $locationProvider, $httpProvider){
     templateUrl:'/client/views/success.html',
     controller:'SuccessController'
   })
+  .when('/error',{
+    templateUrl:'/client/views/error.html',
+    controller:'ErrorController'
+  })
   .otherwise({
-    redirectTo: '/'
+    redirectTo: '/client/views/error.html'
   });
 });
