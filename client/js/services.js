@@ -96,6 +96,10 @@ app.factory('partners', function(){
     {
       image:"/client/images/DataKind_logo.png",
       url:"http://www.datakind.org/"
+    },
+    {
+      image:"https://siqueries.com/static/img/logo_black.png",
+      url:"http://siqueries.com"
     }
   ];
 });
