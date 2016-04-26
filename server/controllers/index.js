@@ -15,8 +15,8 @@ router.post('/email', function(req, res){
   // check for env variables
   if (process.env.VCAP_SERVICES) {
       var env = JSON.parse(process.env.VCAP_SERVICES);
-      db2 = env['user-provided'][0].credentials;
-      connString = "DRIVER={DB2};DATABASE=" + db2.db + ";UID=" + db2.username + ";PWD=" + db2.password + ";HOSTNAME=" + db2.hostname + ";port=" + db2.port;
+      // db2 = env['user-provided'][0].credentials;
+      // connString = "DRIVER={DB2};DATABASE=" + db2.db + ";UID=" + db2.username + ";PWD=" + db2.password + ";HOSTNAME=" + db2.hostname + ";port=" + db2.port;
       credentials = env['sendgrid'][0].credentials;
 
   }
@@ -34,17 +34,17 @@ router.post('/email', function(req, res){
   // create new email instance
   var email = new sendgrid.Email();
   // open connection with ibmdb
-  ibmdb.open(connString, function(error, conn){
-    if (error){
-      res.status(500).send("Can not connect to the IMB database locally");
-			}
-      else{
-          //make SQL query
-          conn.query('INSERT INTO MYTABLE (ADDRESS,COMPANYDESCRIPTION,COMPANYLOGO,COMPANYNAME,COMPANYNUMBER,COMPANYPOINTS,COMPANYSTATUS,COMPANYURL,EMAIL,NAME) VALUES(\''+partner.address+'\',\''+partner.companyDescription+'\',\''+partner.companyLogo+'\',\''+partner.companyName+'\',\''+partner.phoneNumber+'\','+1+',\'None\',\''+partner.comapanyURL+'\',\''+partner.email+'\',\''+partner.name+'\')\;', function(err, tables, moreResultSets){
-            if(err){
-              res.status(500).send("Error Database Insertion Failure");
-            }
-            else{
+  // ibmdb.open(connString, function(error, conn){
+  //   if (error){
+  //     res.status(500).send("Can not connect to the IMB database locally");
+	// 		}
+  //     else{
+  //         //make SQL query
+  //         conn.query('INSERT INTO MYTABLE (ADDRESS,COMPANYDESCRIPTION,COMPANYLOGO,COMPANYNAME,COMPANYNUMBER,COMPANYPOINTS,COMPANYSTATUS,COMPANYURL,EMAIL,NAME) VALUES(\''+partner.address+'\',\''+partner.companyDescription+'\',\''+partner.companyLogo+'\',\''+partner.companyName+'\',\''+partner.phoneNumber+'\','+1+',\'None\',\''+partner.comapanyURL+'\',\''+partner.email+'\',\''+partner.name+'\')\;', function(err, tables, moreResultSets){
+  //           if(err){
+  //             res.status(500).send("Error Database Insertion Failure");
+  //           }
+  //           else{
               // send email
               sendgrid.send({
                 to:       partner.email,
@@ -60,13 +60,13 @@ router.post('/email', function(req, res){
                   }
              });
 
-            }
+            // }
             //close connection with ibmdb
-            conn.close(function(){
-					      });
-            });
-      }
-  });
+            // conn.close(function(){
+					  //     });
+            // });
+      // }
+  // });
 });
 
 module.exports = router;
