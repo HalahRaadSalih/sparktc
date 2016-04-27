@@ -15,8 +15,8 @@ router.post('/email', function(req, res){
   // check for env variables
   if (process.env.VCAP_SERVICES) {
       var env = JSON.parse(process.env.VCAP_SERVICES);
-      // db2 = env['user-provided'][0].credentials;
-      // connString = "DRIVER={DB2};DATABASE=" + db2.db + ";UID=" + db2.username + ";PWD=" + db2.password + ";HOSTNAME=" + db2.hostname + ";port=" + db2.port;
+      db2 = env['user-provided'][0].credentials;
+      connString = "DRIVER={DB2};DATABASE=" + db2.db + ";UID=" + db2.username + ";PWD=" + db2.password + ";HOSTNAME=" + db2.hostname + ";port=" + db2.port + "PROTOCOL=TCPIP";
       credentials = env['sendgrid'][0].credentials;
 
   }
@@ -33,6 +33,21 @@ router.post('/email', function(req, res){
   var sendgrid  = require('sendgrid')(credentials.username, credentials.password);
   // create new email instance
   var email = new sendgrid.Email();
+  // send email
+  sendgrid.send({
+    to:       partner.email,
+    from:     process.env.community_email,
+    subject:  'Welcome To Spark.TC Community',
+    text:     'Thank you for joining the Spark.TC Community.\n You are making the first step to change how people work with data through open analytics. \n Our team is getting to know each community member.\n Please be patient as we make new friendships. \n \n \n {spark.tc}'
+    }, function(err, json) {
+      if (err) {
+        res.status(500).send("Sendgrid Error");
+      }
+      else {
+        res.status(200).send('');
+      }
+ });
+
   // open connection with ibmdb
   // ibmdb.open(connString, function(error, conn){
   //   if (error){
@@ -45,27 +60,13 @@ router.post('/email', function(req, res){
   //             res.status(500).send("Error Database Insertion Failure");
   //           }
   //           else{
-              // send email
-              sendgrid.send({
-                to:       partner.email,
-                from:     process.env.community_email,
-                subject:  'Spark.TC Community',
-                text:     'Thank you for joining the Spark.TC Community.\n You are making the first step to change how people work with data through open analytics. \nOur team is getting to know each community member.\n Please be patient as we make new friendships. \n \n \n{spark.tc}'
-                }, function(err, json) {
-                  if (err) {
-                    res.status(500).send("Sendgrid Error");
-                  }
-                  else {
-                    res.status(200).send('');
-                  }
-             });
-
-            // }
-            //close connection with ibmdb
-            // conn.close(function(){
-					  //     });
-            // });
-      // }
+  //
+  //           }
+  //           //close connection with ibmdb
+  //           conn.close(function(){
+	// 				      });
+  //           });
+  //     }
   // });
 });
 
