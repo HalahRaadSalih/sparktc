@@ -199,10 +199,6 @@ app.factory('partnerTypes', function(){
           checkList:["", "✓", "✓"]
         },
         {
-          title:"Gets The Member List",
-          checkList:["", "✓", "✓"]
-        },
-        {
           title:"Inclusion on our Blog",
           checkList:["", "", "✓"]
         },
