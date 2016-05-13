@@ -36,6 +36,7 @@ router.post('/email', function(req, res){
   // send email
   sendgrid.send({
     to:       partner.email,
+    bcc:      process.env.from_email,
     from:     process.env.community_email,
     subject:  'Welcome To Spark.TC Community',
     text:     'Thank you for joining the Spark.TC Community.\n You are making the first step to change how people work with data through open analytics. \n Our team is getting to know each community member.\n Please be patient as we make new friendships. \n \n \n {spark.tc}'
